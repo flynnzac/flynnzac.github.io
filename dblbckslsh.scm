@@ -6,6 +6,7 @@
 (use-modules (ice-9 textual-ports))
 (define header-regex "\\\\\\\\HEADER")
 (define footer-regex "\\\\\\\\FOOTER")
+(define google-analytics-regex "\\\\\\\\ANALYTICS")
 
 (define page-list
   (list "index" "research" "teaching" "programs" "links" "102" "310"))
@@ -40,6 +41,20 @@
                     (strftime "%c" (localtime (current-time)))
                     "\n<br>Copyright 2018 Zach Flynn."))
 
+   (define google-analytics-text
+     "<!-- Global site tag (gtag.js) - Google Analytics -->\n
+<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-59441513-2\"></script>\n
+<script>\n
+  window.dataLayer = window.dataLayer || [];\n
+  function gtag(){dataLayer.push(arguments);}\n
+  gtag('js', new Date());\n
+\n
+  gtag('config', 'UA-59441513-2');\n
+</script>")
+
+   
+
+
    (define regex-text
      (string-append "<a href=\\\""
                     file
@@ -69,6 +84,11 @@
                         footer-text
                         'post))
 
+   (set! main-text
+     (regexp-substitute #f (string-match google-analytics-regex main-text)
+                        'pre
+                        google-analytics-text
+                        'post))
 
    
    (let ((output-port (open-file file "w")))
