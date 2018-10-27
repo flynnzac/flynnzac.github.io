@@ -1,3 +1,7 @@
+;; Copyright 2018 Zach Flynn
+;; Licensed under the 3-clause BSD license, included as the file COPYING in this repository or
+;; available online at: https://opensource.org/licenses/BSD-3-Clause
+
 (use-modules (ice-9 regex))
 (use-modules (ice-9 textual-ports))
 (define header-regex "\\\\\\\\HEADER")
@@ -33,7 +37,8 @@
 
    (define footer-text
      (string-append "\n<hr>\nThis site last update: "
-                    (strftime "%c" (localtime (current-time)))))
+                    (strftime "%c" (localtime (current-time)))
+                    "\n<br>Copyright 2018 Zach Flynn."))
 
    (define regex-text
      (string-append "<a href=\\\""

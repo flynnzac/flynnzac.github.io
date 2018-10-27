@@ -1,0 +1,9 @@
+Workflow:
+
+1. Edit the files *.pre.html.
+2. Edit the header and footers by changing how they are defined in dblbckslsh.scm.
+3. Headers and footers are put wherever \\HEADER and \\FOOTER are.
+4. Type make to rebuild the *.html files.
+
+See COPYING for license info for dblbckslsh.scm if you are actually interested in using this code for some reason.
+
