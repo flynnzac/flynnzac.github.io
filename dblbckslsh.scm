@@ -7,6 +7,7 @@
 (define header-regex "\\\\\\\\HEADER")
 (define footer-regex "\\\\\\\\FOOTER")
 (define google-analytics-regex "\\\\\\\\ANALYTICS")
+(define meta-regex "\\\\\\\\META")
 
 (define page-list
   (list "index" "research" "teaching" "programs" "links" "102" "310"))
@@ -53,6 +54,10 @@
 </script>")
 
    
+   (define meta-text
+     "<meta name=\"description\" content=\"Zach Flynn is an economist and this website has links to his research.\">\n
+    <meta name=\"keywords\" content=\"economics,Zach Flynn,productivity,industrial organization\">\n
+    <meta name=\"author\" content=\"Zach Flynn\">\n")
 
 
    (define regex-text
@@ -88,6 +93,12 @@
      (regexp-substitute #f (string-match google-analytics-regex main-text)
                         'pre
                         google-analytics-text
+                        'post))
+
+   (set! main-text
+     (regexp-substitute #f (string-match meta-regex main-text)
+                        'pre
+                        meta-text
                         'post))
 
    
