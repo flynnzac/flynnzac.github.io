@@ -29,7 +29,6 @@
   <a href=\"teaching.html\">Teaching</a>\n
   <a href=\"programs.html\">Programs</a>\n
   <a href=\"links.html\">Links</a>\n
-  <a href=\"https://medium.com/@zlflynn\">Blog</a>\n
   <hr>\n
   <a href=\"https://github.com/flynnzac/cv/raw/master/cv.pdf\">Curriculum Vitae</a>\n
   <address>\n
