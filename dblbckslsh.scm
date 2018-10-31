@@ -5,11 +5,6 @@
 (use-modules (ice-9 regex))
 (use-modules (ice-9 textual-ports))
 
-(define header-regex "\\\\\\\\HEADER")
-(define footer-regex "\\\\\\\\FOOTER")
-(define google-analytics-regex "\\\\\\\\ANALYTICS")
-(define meta-regex "\\\\\\\\META")
-
 (define page-list
   (list "index" "research" "teaching" "programs" "links" "102" "310"))
 
