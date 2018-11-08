@@ -1,33 +1,11 @@
 <html>
   <head>
-    <meta name="description" content="Zach Flynn is an economist and this website has links to his research.">
-    <meta name="keywords" content="economics,Zach Flynn,productivity,industrial organization">
-    <meta name="author" content="Zach Flynn">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-59441513-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-59441513-2');
-</script>
+    \\META
+    \\ANALYTICS
     <title>Zach Flynn</title>
   </head>
   <body>
-    <h1>Zach Flynn</h1>
-  <hr>
-  <a href="index.html">Home</a>
-  <b><a href="research.html">Research</a></b>
-  <a href="teaching.html">Teaching</a>
-  <a href="programs.html">Programs</a>
-  <a href="links.html">Links</a>
-  <hr>
-  <a href="https://github.com/flynnzac/cv/raw/master/cv.pdf">Curriculum Vitae</a>
-  <address>
-    Email: <a href="mailto:zlflynn@gmail.com">zlflynn@gmail.com</a>
-  </address>
-  <hr>
+    \\HEADER
     <i>Fields:</i> Industrial organization, econometrics, environmental economics.<br>
     <i>Interests:</i> productivity and how policy affects it.
 
@@ -45,7 +23,6 @@
           <blockquote>
             SSRN Link: <a href="https://ssrn.com/abstract=3223189">https://ssrn.com/abstract=3223189</a>
           </blockquote>
-	<li><a href="https://drive.google.com/uc?export=download&id=0B3lRF6Rj0MEuT3drV1BmVnVrMUU">Inference on functions of parameters partially identified by the intersection of continuous linear inequalities</a>
       </ul>
       <h3>Published papers</h3>
       <ul>
@@ -62,9 +39,6 @@
 
       </ul>
 
-      
-<hr>
-This site last updated: Thu, Nov  8, 2018  3:12:06 PM
-<br>Copyright 2018 Zach Flynn.
+      \\FOOTER
   </body>
 </html>
