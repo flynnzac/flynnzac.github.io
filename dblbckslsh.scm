@@ -66,7 +66,7 @@
   <a href=\"programs.html\">Programs</a>
   <a href=\"links.html\">Links</a>
   <hr>
-  <a href=\"https://github.com/flynnzac/cv/raw/master/cv.pdf\">Curriculum Vitae</a>
+  <a href=\"https://github.com/flynnzac/cv/raw/master/cv.pdf\">Curriculum Vitae</a><br>
   <address>
     Email: <a href=\"mailto:zlflynn@gmail.com\">zlflynn@gmail.com</a>
   </address>
