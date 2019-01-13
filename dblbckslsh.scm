@@ -84,15 +84,15 @@
 	    header-text))))
 
 
-   (define main-text (get-string-all (open-file src "r")))
-
-   (set! main-text (header-replace main-text))
-   (set! main-text (footer-replace main-text))
-   (set! main-text (analytics-replace main-text))
-   (set! main-text (meta-replace main-text))
-
-   (let ((output-port (open-file file "w")))
-     (display main-text output-port)
+   (let ((output-port (open-file file "w"))
+	 (main-text (get-string-all (open-file src "r"))))
+     (display
+      (meta-replace
+       (analytics-replace
+	(footer-replace
+	 (header-replace
+	  main-text))))
+      output-port)
      (close-port output-port)))
  page-list)
 
