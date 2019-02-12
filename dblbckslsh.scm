@@ -6,7 +6,7 @@
 (use-modules (ice-9 textual-ports))
 
 (define page-list
-  (list "index" "research" "teaching" "programs" "links" "102" "310" "reading"))
+  (list "index" "research" "teaching" "programs" "links" "102" "310"))
 
 (define-syntax create-pattern
   (syntax-rules ()
@@ -65,7 +65,6 @@
   <a href=\"teaching.html\">Teaching</a>
   <a href=\"programs.html\">Programs</a>
   <a href=\"links.html\">Links</a>
-  <a href=\"reading.html\">Reading</a>
   <hr>
   <a href=\"https://github.com/flynnzac/cv/raw/master/cv.pdf\">Curriculum Vitae</a><br>
   <address>
