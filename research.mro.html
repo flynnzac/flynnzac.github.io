@@ -1,12 +1,14 @@
+#b2=<b>@#b2end=</b>@
+#(source "mysite.mro");
 <html>
   <head>
-    \\META
-    \\ANALYTICS
+    #meta~
+    #analytics~
     <title>Zach Flynn</title>
   </head>
   <body>
-    \\HEADER
-    <i>Fields:</i> Industrial organization, econometrics, environmental economics.<br>
+    #header~
+    `<i>Fields:</i> Industrial organization, econometrics, environmental economics.<br>
     <i>Interests:</i> productivity and how policy affects it.
 
     <p>Feel free to send harsh criticism and/or lavish praise about any of the papers to <a href="mailto:zlflynn@gmail.com">zlflynn@gmail.com</a>.
@@ -39,10 +41,10 @@
       <h3>Abandoned and unpublished, but useful</h3>
       <ul>
         <li><a href="https://drive.google.com/uc?export=download&id=1bqkGhxoQVbWFk2YrNvznsi42jIoC5ruw">Estimating logistic regressions via two stage least squares</a>.
-          Paper proposes a simple way to get around convergence problems in logistic regressions and to deal with endogeneity in binary regressions that I've found to be very useful in practice. Especially useful for automated models where the estimates have to be produced automatically for a given dataset which is not known until runtime and you have to be sure the model converges. The method is useful, and it is worth trying if you encounter convergence issues or a model with endogenous covariates and a binary dependent variable.
+          Paper proposes a simple way to get around convergence problems in logistic regressions and to deal with endogeneity in binary regressions that I have found useful in practice. Especially useful for automated models where the estimates have to be produced automatically for a given dataset which is not known until runtime and you have to be sure the model converges. The method is useful, and it is worth trying if you encounter convergence issues or a model with endogenous covariates and a binary dependent variable.
 
-      </ul>
+      </ul>'
 
-      \\FOOTER
+      #footer~
   </body>
 </html>
