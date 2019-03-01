@@ -1,9 +1,2 @@
-Workflow:
-
-1. Edit the files *.pre.html.
-2. Edit the header and footers by changing how they are defined in dblbckslsh.scm.
-3. Headers and footers are put wherever \\HEADER and \\FOOTER are.  The current page is bolded in the header links.
-4. Type make to rebuild the *.html files.
-
-See COPYING for license info for dblbckslsh.scm if you are actually interested in using this code for some reason.
+The website is built using my mro macro processor (http://github.com/flynnzac/mro).
 
