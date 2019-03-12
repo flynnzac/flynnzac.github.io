@@ -1,10 +1,10 @@
 #footer=
 <hr>
-This site last updated: #(strftime "`%'c" (localtime (current-time)))|
+This site last updated: #(strftime "`%'c" (localtime (current-time)))!
 <br>Copyright 2019 Zach Flynn.@
 
 #analytics=
-<!-- Global site tag (gtag.js) - Google Analytics -->
+<`!'-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59441513-2"></script>
 <script>
   window.dataLayer = window.dataLayer `||' [];
