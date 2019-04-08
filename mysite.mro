@@ -20,7 +20,21 @@ This site last updated: #(strftime "`%'c" (localtime (current-time)))!
 <meta name="author" content="Zach Flynn">
 @
 
-#header=
+
+%#css=
+%`<link rel="stylesheet" href="https://www.w3.org/StyleSheets/Core/Steely" type="text/css">'
+%@
+
+#header=`
+<!doctype html>
+<html>
+  <head>
+    #meta~
+    #analytics~
+    <title>Zach Flynn</title>
+    #css~
+  </head>
+  <body>
 <h1>Zach Flynn</h1>
   <hr>
   #b1~<a href="index.html">Home</a>#b1end~
@@ -31,9 +45,9 @@ This site last updated: #(strftime "`%'c" (localtime (current-time)))!
   <hr>
   <a href="https://github.com/flynnzac/cv/raw/master/cv.pdf">Curriculum Vitae</a><br>
   <address>
-    Email: <a href="mailto:zlflynn`@'gmail.com">zlflynn`@'gmail.com</a>
+    Email: <a href="mailto:zlflynn@gmail.com">zlflynn@gmail.com</a>
   </address>
-  <hr>
+  <hr>'
 @
 
 
