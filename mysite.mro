@@ -27,7 +27,7 @@ This site last updated: #(strftime "`%'c" (localtime (current-time)))!
 
 #header=`
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     #meta~
     #analytics~
