@@ -1,6 +1,6 @@
 #footer=
 <hr>
-This site last updated: #(strftime "`%'c" (localtime (current-time)))!
+This page last updated: #(strftime "`%'c" (localtime (current-time)))!
 <br>Copyright 2019 Zach Flynn.@
 
 #analytics=
