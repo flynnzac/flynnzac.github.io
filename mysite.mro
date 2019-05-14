@@ -21,9 +21,9 @@ This page last updated: #(strftime "`%'c" (localtime (current-time)))!
 @
 
 
-%#css=
-%`<link rel="stylesheet" href="https://www.w3.org/StyleSheets/Core/Steely" type="text/css">'
-%@
+% #css=
+% `<link rel="stylesheet" href="Oldstyle.css" type="text/css">'
+% @
 
 #header=`
 <!doctype html>
