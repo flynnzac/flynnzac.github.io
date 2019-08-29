@@ -1,7 +1,7 @@
 #footer=
 <hr>
 This page last updated: #(strftime "`%'c" (localtime (current-time)))!
-<br>Copyright 2019 Zach Flynn.@
+@
 
 #analytics=
 <`!'-- Global site tag (gtag.js) - Google Analytics -->
