@@ -1,6 +1,6 @@
 #footer=
 <hr>
-This page last updated: #(strftime "`%'c" (localtime (current-time)))!
+This page last updated: #date|
 @
 
 #analytics=
@@ -30,7 +30,7 @@ This page last updated: #(strftime "`%'c" (localtime (current-time)))!
     <title>Zach Flynn</title>
     #css~
   </head>
-  <body bgcolor="`#FFFFE6''`">
+  <body bgcolor="`#FFFFF0''`">
 <h1>Zach Flynn</h1>
   <hr>
   #b1~<a href="index.html">Home</a>#b1end~
