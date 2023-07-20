@@ -1,4 +1,4 @@
-web: index.html research.html teaching.html programs.html links.html 102.html 310.html
+web: index.html research.html teaching.html programs.html links.html 102.html 310.html 
 
 index.html: index.pshm.html mysite.pshm
 	cat index.pshm.html | pushmac > index.html
@@ -20,6 +20,8 @@ links.html: links.pshm.html mysite.pshm
 
 310.html: 310.pshm.html mysite.pshm
 	cat 310.pshm.html | pushmac > 310.html
+
+
 
 
 
