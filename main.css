@@ -1,0 +1,29 @@
+.navbar a {
+    display: inline-block;
+    background: #89CFF0;
+    color: black;
+    padding: 0.25em;
+    border-radius: 0.2em;
+    text-decoration: none;
+}
+.navbar a:hover {
+    display: inline-block;
+    background: #00A36C;
+    color: white;
+    padding: 0.25em;
+    border-radius: 0.2em;
+    text-decoration: none;
+}
+
+.main_links {
+    background: #FAF9F6;
+    border-radius: 0.5em;
+    color: black;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0.5em;
+}
+
+a {
+    text-decoration: none;
+}

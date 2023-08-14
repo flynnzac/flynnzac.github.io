@@ -1,6 +1,7 @@
 #footer=
 <hr>
 This page last updated: #date|
+</div>
 @
 
 #analytics=
@@ -20,6 +21,9 @@ This page last updated: #date|
 <meta name="author" content="Zach Flynn">
 @
 
+#css=
+<link rel="stylesheet" href="main.css">
+@
 
 #header=`
 <!doctype html>
@@ -30,15 +34,20 @@ This page last updated: #date|
     <title>Zach Flynn</title>
     #css~
   </head>
-  <body bgcolor="`#FFFFF0''`">
+  <body bgcolor="`#FFFFFF''`">
+  <div style="width:90%;margin-left:5%;margin-right:5%">
 <h1>Zach Flynn</h1>
-  <hr>
+
+  <span class="navbar">
   #b1~<a href="index.html">Home</a>#b1end~
   #b2~<a href="research.html">Research</a>#b2end~
-  #b3~<a href="teaching.html">Teaching</a>#b3end~
   #b4~<a href="programs.html">Programs</a>#b4end~
+  #b3~<a href="teaching.html">Teaching</a>#b3end~
   #b5~<a href="links.html">Links</a>#b5end~
-  <hr>
+  </span>
+  
+  <br>
+  <div class="main_links">
   <a href="cv.pdf">Curriculum Vitae</a><br>
   <address>
     Email: <a href="mailto:zlflynn@gmail.com">zlflynn@gmail.com</a>
@@ -46,7 +55,7 @@ This page last updated: #date|
   <br>
   Github: <a href="http://github.com/flynnzac">http://github.com/flynnzac</a><br>
   LinkedIn: <a href="https://www.linkedin.com/in/zlflynn/">https://www.linkedin.com/in/zlflynn/</a>
-  <hr>'
+  </div>'
 @
 
 
