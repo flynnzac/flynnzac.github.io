@@ -1,0 +1,16 @@
+{
+    "messages": [
+        "Hello",
+        "Goodbye"
+    ],
+    "choices": [
+        {
+            "description": "Choice 1",
+            "toConversation": "https://zflynn.com/tests/test_conv2.json",
+            "stateDelta": {
+                "strength": 1,
+                "kind": "increment"
+            }
+        }
+    ],
+}
