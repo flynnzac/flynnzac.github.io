@@ -1,29 +1,33 @@
-.navbar a {
-    display: inline-block;
-    background: #89CFF0;
-    color: black;
-    padding: 0.25em;
-    border-radius: 0.2em;
-    text-decoration: none;
-}
-.navbar a:hover {
-    display: inline-block;
-    background: #00A36C;
-    color: white;
-    padding: 0.25em;
-    border-radius: 0.2em;
-    text-decoration: none;
-}
-
-.main_links {
-    background: #FAF9F6;
-    border-radius: 0.5em;
-    color: black;
-    margin-top: 1em;
-    margin-bottom: 1em;
+.header a {
     padding: 0.5em;
+    text-decoration: none;
+}
+.page-title {
+    font-size: 16pt;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
-a {
-    text-decoration: none;
+.accordion {
+  background-color: #eee;
+  color: #444;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
 }

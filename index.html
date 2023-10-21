@@ -1,95 +1,34 @@
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!doctype html>
-<html lang="en">
+<html>
   <head>
-    
-<meta name="description" content="Zach Flynn is an economist and this website has links to his research.">
-<meta name="keywords" content="economics,Zach Flynn,productivity,industrial organization">
-<meta name="author" content="Zach Flynn">
-
-    
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-59441513-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-59441513-2');
-</script>
     <title>Zach Flynn</title>
-    
-<link rel="stylesheet" href="main.css">
-
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
   </head>
-  <body bgcolor="#FFFFFF">
-  <div style="width:90%;margin-left:5%;margin-right:5%">
-<h1>Zach Flynn</h1>
+  <body>
+    <div class="header" w3-include-html="header.html"></div>
 
-  <span class="navbar">
-  <b><a href="index.html">Home</a></b>
-  <a href="research.html">Research</a>
-  <a href="programs.html">Programs</a>
-  <a href="teaching.html">Teaching</a>
-  <a href="links.html">Links</a>
-  </span>
-  
-  <br>
-  <div class="main_links">
-  <a href="cv.pdf">Curriculum Vitae</a><br>
-  <address>
-    Email: <a href="mailto:zlflynn@gmail.com">zlflynn@gmail.com</a>
-  </address>
-  <br>
-  Github: <a href="http://github.com/flynnzac">http://github.com/flynnzac</a><br>
-  LinkedIn: <a href="https://www.linkedin.com/in/zlflynn/">https://www.linkedin.com/in/zlflynn/</a>
-  </div>
+    <div class="body" style="width:100%">
+      <div class="text" style="width:50%; float:left">
+        <p>I am an <b>Economist</b> and <b>Data Scientist</b>.  I use data to learn what people want and how best to provide it.  I analyze experiments, estimate demand and supply, and build models to inform product design decisions.  I have worked in the technology industry (Amazon, Udemy, Afiniti) and in litigation consulting (Compass Lexecon). I have a PhD in Economics from the University of Wisconsin, Madison.</p>
 
+        <p>Good data analysis combines <b>theory</b> and <b>statistics</b>.</p>
 
-<figure style="float:right; margin: 0px 15px 15px 15px; border=0px; display:table; width:25%; height:40%" width=280>
-  <img alt="Zach Flynn" src="me_from_wedding.png" width="100%" height="100%" style="border-radius:1em">
-</figure>
+        <p><b>Theory</b> models how the real world generates the data, whether by the choices people make or by random assignment in an experiment.  Theory also tells us what metrics matter for success and gives insight on what improvements we might make to our products.  Theory is our model of the world and the lens through which we interpret data.</p>
 
-<div style="width: 60%">
-<p>Welcome to my website!  I am an economist. I currently work for <a href="udemy.com">Udemy</a>. I formerly worked for: <a href="http://compasslexecon.com">Compass Lexecon</a>, <a href="http://amazon.com">Amazon</a> and <a href="http://www.afiniti.com">Afiniti</a>.  I got my PhD in economics from the <a href="http://econ.wisc.edu">University of Wisconsin - Madison</a>.  This site has links to my academic work and my resume/CV.</p>
+        <p><b>Statistics</b> listens to what the data says, independent of a model. Statistics summarizes the data as it is.</p>
+        
+        <p>Statistics alone rarely answers an interesting question.  It can never show what causes what.  But statistics combined with theory is a powerful tool.</p>
 
-<p>My main fields of academic research are industrial organization, productivity, econometrics, and environmental economics. Recently, I have been working on some applied macroeconomics work as well, related to my more micro work on productivity choice.</p>
+        <p><b>I try to do good data analysis and build tools to help others do so.</b></p>
+      </div>
 
-<p>I study the distribution of technology across firms and industries, how it has changed over time, and how policies affect it.  <i>Technology</i> in economics means <i>transformation</i> &mdash; a method of turning some goods and services into another good or service.  Some methods are better than others and we say these methods have greater <i>productivity</i>.  I study the distribution of productivity and how to recover it from data.</p>
-
-<p>In industry work, I have experience doing everything from building models for pricing Amazon Prime to implementing empirical matching algorithms to efficiently match salespeople and customers to developing analysis for experimentation.  My CV has more info.</p>
-
-<p>I am a fan of the San Diego Padres and their annual quest to finish better than last place in the NL West.</p>
-<ul>
-  <li> In 2018, they... did not succeed.
-  <li> In 2019, they... did not succeed again... but closer!
-  <li> In 2020, they made the playoffs!
-  <li> In 2021, they did not make the playoffs - but did better!
-  <li> In 2022, they went to the NLCS!!
-</ul>
-</div>
-
-
-
-
-<hr>
-This page last updated: Mon Aug 14 02:36:36 AM CDT 2023
-
-</div>
-
-</body>
+      <div class="photo" style="width:45%; float:left">
+        <img src="me_revised.png" style="margin-left: 5%; margin-top:5%" alt="Zach Flynn">
+      </div>
+    </div>
+    <script>
+      includeHTML();
+    </script>
+  </body>
 </html>

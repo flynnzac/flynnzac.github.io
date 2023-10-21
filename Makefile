@@ -1,4 +1,4 @@
-web: index.html research.html teaching.html programs.html links.html 102.html 310.html 
+web: index.html research.html teaching.html programs.html links.html 102.html 310.html main.css
 
 index.html: index.pshm.html mysite.pshm
 	cat index.pshm.html | pushmac > index.html
