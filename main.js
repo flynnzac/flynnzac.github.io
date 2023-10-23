@@ -38,6 +38,7 @@ function setupAccordion() {
 
             /* Toggle between hiding and showing the active panel */
             var panel = this.nextElementSibling;
+            console.log(panel.style.display);
             if (panel.style.display === "block") {
                 panel.style.display = "none";
             } else {

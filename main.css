@@ -1,27 +1,54 @@
+.body {
+    width: 95%;
+    margin-left: 2.5%;
+    font-family: 'Noto Serif', serif;
+}
+
+.header {
+    font-family: 'Noto Serif', serif;
+}
+
 .header a {
     padding: 0.5em;
     text-decoration: none;
+    color: blue;
 }
+
+.header a:hover {
+    color: purple;
+    font-weight: bold;
+}
+
 .page-title {
     font-size: 16pt;
     padding-top: 1em;
     padding-bottom: 1em;
 }
 
+.page-lower-title {
+    font-size: 14pt;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+    
+
 .accordion {
   background-color: #eee;
-  color: #444;
+  color: black;
   padding: 18px;
   width: 100%;
   text-align: left;
   border: none;
   outline: none;
   transition: 0.4s;
+  font-size: 14pt;
+  font-family: 'Noto Serif', serif;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: #ccc;
+.accordion:hover {
+    background-color: #ccc;
+    color: black;
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -30,4 +57,15 @@
   background-color: white;
   display: none;
   overflow: hidden;
+}
+.accordion:after {
+  content: '\025B6'; /* Unicode character for "plus" sign (+) */
+  font-size: 12pt;
+  color: black;
+  float: left;
+  margin-right: 1em;
+}
+
+.active:after {
+  content: "\025BC"; /* Unicode character for "minus" sign (-) */
 }

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Zach Flynn is an economist and dat scientist and this website has links to his projects and research.">
+    <meta name="keywords" content="economics,Zach Flynn,productivity,industrial organization,statistics,data science">
+    <meta name="author" content="Zach Flynn">
+
+    <title>Zach Flynn: Data Projects</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="header" w3-include-html="header.html"></div>
+
+    <div class="body">
+
+      <div class="page-title">Projects</div>
+
+      <button class="accordion">Estimating quantile treatments efficiently in experiments</button>
+      <div class="panel">
+        <p>When we run experiments, we look for ways to make them find results faster.  After all, it’s a business and speed matters.  Usually, we use a CUPED-like method.  But these methods only work for average treatment effects.  In this short blog post, I show how to do this for quantile treatment effects (hint: it’s not quantile regression, that does not work).</p>
+
+        <p><a href="https://medium.com/udemy-engineering/accelerating-online-experiments-that-target-quantile-treatment-effects-dffa749694f7">Blog post.</a></p>
+      </div>
+
+      <button class="accordion">Using automated memos instead of dashboards</button>
+      <div class="panel">
+        <p>You may have experience using dashboarding services like Tableau.  While useful for lots of data-tracking problems, these services are also often applied to display results for complex data analysis.  They prioritize visual display over content and context.  I think a better way to design self-service data analysis systems is by using a more literate system of dashboarding: Memos.  I wrote a Ruby on Rails app that implements something closer to how I think self-service data analysis should look.  Data scientists can write memo templates that automatically generate explanations and context for end users - and the generated memos can be edited with the user’s own comments!  Self-serve data analysis should be like normal data analysis, and normal data analysis involves more than SQL queries. </p>
+
+        <p>Check it out at: <a href="https://github.com/flynnzac/memo_er">github.com/flynnzac/memo_er</a></p>
+      </div>
+
+      <button class="accordion">Measuring productivity</button>
+      <div class="panel">
+        <p>Measuring productivity, how much a production plant produces for a fixed set of inputs, is a difficult problem.  It is difficult because more productive plants also demand different levels of the factors of production (labor, capital, materials, etc).  The simple relationship between output and inputs gives a misleading relationship.  Standard approaches to solve this problem require a heavy dose of theory, much of which is more about model estimation than using strong predictions from economic theory.  This paper develops a robust result from economic theory and shows how to use it to learn how productivity varies across plants.</p>
+
+        <p>Check it out: <a href="https://zflynn.com/papers/pit_zf.pdf">https://zflynn.com/papers/pit_zf.pdf</a></p>
+      </div>
+
+      <button class="accordion">Enable Stata-like data manipulation in R</button>
+      <div class="panel">
+        <p>I wrote genvar, an R package, that introduces an imperative, Stata-like data manipulation/regression syntax to R.  The purpose of the project is to make the transition to R friendlier for people coming from fields that predominantly use Stata or other imperative data manipulation environments.  By imperative, I mean an environment where a series of commands are executed on a dataset to produce a result.</p>
+
+        <p>Check it out: <a href="https://github.com/flynnzac/genvar">https://github.com/flynnzac/genvar</a>.</p>
+      </div>
+
+      </div>
+    </div>
+
+    <script>
+      setupAccordion();
+      includeHTML();
+    </script>
+
+  </body>
+</html>
