@@ -10,7 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300&display=swap" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59441513-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'UA-59441513-2');
+    </script>
   </head>
   <body>
     <div class="header" w3-include-html="header.html"></div>
@@ -60,7 +67,7 @@
 
         <p>“Minimize loss” is a <i>hard</i> problem unless the function has structure (convexity).  Thinking about how exactly to solve the problem is critical for using estimators based on optimization in practice.  </p>
 
-        <p>The numerical algorithm should use the structure of the optimization problem to get the right results.  Don’t just run it through Nelder-Mead or Newton methods and assume it will find the optimum result!  In all likelihood, it will not.</p>
+        <p>The numerical algorithm should use the structure of the optimization problem to get the right results.  We can't assume that just running the problem through Nelder-Mead or Newton methods will find the optimum result!  In all likelihood, it will not.</p>
       </div>
 
       <button class="accordion">The weaker the theory, the more robust the results. The stronger the theory, the more meaningful the results.</button>
