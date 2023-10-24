@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Zach Flynn: Fun, Non-Data Projects</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300&display=swap" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59441513-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-59441513-2');
+    </script>
+
+  </head>
+  <body>
+    <div class="header" w3-include-html="header.html"></div>
+    <div class="body">
+      <div class="page-title">Non-Data Projects</div>
+      
+      <p>I write programs sometimes for non-data things. Usually either to solve a a non-work problem or just for fun.</p>
+
+      <button class="accordion">SLOBIL: a programming language for command-based interactive programs</button>
+      <div class="panel">
+        <p>On the bus to work in DC (circa 2018), I started writing a programming language that I thought would work well for quickly spinning up interactive programs... and would make the busride less boring. It has gotten seriously out of hand and now has a prototype-based object system, multi-tasking, etc.</p>
+
+        <p>See: the <a href="https://zflynn.com/slobil/slobil.html">manual</a> and the Github: <a href="https://github.com/flynnzac/slobil">https://github.com/flynnzac/slobil</a>.</p>
+      </div>
+
+      <button class="accordion">Leas: the Little Extensible Accounting System</button>
+      <div class="panel">
+        <p>I wrote the “Little Extensible Accounting System” or Leas when I was budgeting for my wedding.  It’s kind of the Emacs of personal finance (without the popularity).  You can extend it by writing Scheme (a Lisp dialect).  Most of the system is written in Scheme that calls C functions.  I use the extensibility to do things like fetch the latest stock/mutual fund prices, etc.</p>
+
+        <p>See: <a href="https://github.com/flynnzac/leas">https://github.com/flynnzac/leas</a>.</p>
+      </div>
+
+      <button class="accordion">pushmac: a stack-based macro language</button>
+      <div class="panel">
+        <p>pushmac is a small macro language that aims to be a flexible way to template code and other text.  I used it for a decent part of SLOBIL.</p>
+
+        <p>See: <a href="https://github.com/flynnzac/pushmac">https://github.com/flynnzac/pushmac</a>.</p>
+      </div>
+      
+    </div>
+    <script>
+      setupAccordion();
+      includeHTML();
+    </script>
+
+  </body>
+</html>

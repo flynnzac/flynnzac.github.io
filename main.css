@@ -1,29 +1,72 @@
-.navbar a {
-    display: inline-block;
-    background: #89CFF0;
-    color: black;
-    padding: 0.25em;
-    border-radius: 0.2em;
-    text-decoration: none;
-}
-.navbar a:hover {
-    display: inline-block;
-    background: #00A36C;
-    color: white;
-    padding: 0.25em;
-    border-radius: 0.2em;
-    text-decoration: none;
-}
-
-.main_links {
-    background: #FAF9F6;
-    border-radius: 0.5em;
-    color: black;
+.body {
+    width: 95%;
+    margin-left: 2.5%;
     margin-top: 1em;
-    margin-bottom: 1em;
-    padding: 0.5em;
+    font-family: 'Noto Serif', serif;
 }
 
-a {
+.header {
+    font-family: 'Noto Serif', serif;
+}
+
+.header a {
+    padding: 0.5em;
     text-decoration: none;
+    color: blue;
+}
+
+.header a:hover {
+    color: purple;
+    font-weight: bold;
+}
+
+.page-title {
+    font-size: 16pt;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.page-lower-title {
+    font-size: 14pt;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+    
+
+.accordion {
+  background-color: #eee;
+  color: black;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 14pt;
+  font-family: 'Noto Serif', serif;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+.accordion:after {
+  content: '\025B6'; /* Unicode character for "plus" sign (+) */
+  font-size: 12pt;
+  color: black;
+  float: left;
+  margin-right: 1em;
+}
+
+.active:after {
+  content: "\025BC"; /* Unicode character for "minus" sign (-) */
 }
