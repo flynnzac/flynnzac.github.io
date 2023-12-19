@@ -65,6 +65,16 @@
         <p>But all model results are ultimately <i>some</i> function of the data.  Understanding what the function looks like, and whether it makes sense that these data objects inform the ultimate causal question of interest is critical to evaluating whether the model and analysis are reasonable.</p>
       </div>
 
+      <button class="accordion">The random coefficients logit demand model is a logit demand model at the "individual" level.</button>
+      <div class="panel">
+        <p>This take is a bit specific, but these kinds of demand models have idiosyncracies.</p>
+        
+        <p>Often, the best way to diagnose why you're getting whatever you're getting from a BLP-style demand model is to recognize that it's a logit model for a given draw from the distribution.  So the only reason <a href="https://en.wikipedia.org/wiki/Independence_of_irrelevant_alternatives">Independence of Irrelevant Alternatives</a> does not hold in the aggregate demand model is because of the distribution of the random coefficients.</p>
+        
+        <p>When you're estimating a cross-price elasticity, the main thing that matters is the pattern of correlation for the coefficients.  Only the product characteristics you include can help generate substitution patterns that differ from IIA!  This is easy to confuse because the notation of this models often looks like we have some kind of unobservable difference, but the characteristics we include matter a lot for substitution patterns and will vary widely depending on what we include.</p>
+
+      </div>
+        
       <button class="accordion">Numerical optimization is a hard problem not an afterthought.</button>
       <div class="panel">
         <p>“Maximize the log-likelihood” and “minimize the loss function” sound like much more straightforward operations than they are in practice.</p>
