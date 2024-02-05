@@ -18,9 +18,11 @@
 
       gtag('config', 'UA-59441513-2');
     </script>
+    <script src="htmx.min.js.js"></script>
   </head>
+
   <body>
-    <div class="header" w3-include-html="header.html"></div>
+    <div class="header" hx-trigger="load" hx-get="header.html"></div>
 
     <div class="body">
 
@@ -28,62 +30,81 @@
 
       <p>Some short, hot takes on data analysis.</p>
 
-      <button class="accordion">Measuring experiment success is a hard problem.</button>
-      <div class="panel">
-        <p>Establishing causality is easy with experiments.  That’s why they’re great!  But the problem of what variable specifically we want to look at decide whether an experiment’s outcome is “good” is a surprisingly difficult problem.</p>
+      <div style="width:50%;float:left">
+        <table style="width:100%; border: 0.1em solid black">
+          <tr>
+            <th style="background-color: #eee">Current Takes</th>
+          </tr>
+          <tr >
+            <td style="padding-bottom: 1em">
+              <b class="projlink"
+                 hx-trigger="click"
+                 hx-get="measuring_experiment_success.html"
+                 hx-target="#hot-take-zone">Measuring experiment success is a hard problem.</b>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-bottom: 1em">
+              <b class="projlink"
+                 hx-trigger="click"
+                 hx-get="failed_experiment_value.html"
+                 hx-target="#hot-take-zone">Failed experiments are the value of experimentation.</b>
+            </td>
+          </tr>
 
-        <p>If we choose a metric that definitely indicates a win because it is an ultimate company metric (revenue, profit, etc), the experiment will have to run for a very long time because everything that affects our business moves the metric.  Separating the signal of our experiment from all that noise will take longer.  Speed matters.</p>
+          
+          <tr>
+            <td style="padding-bottom: 1em">
+              <b class="projlink"
+                 hx-trigger="click"
+                 hx-get="drp.html"
+                 hx-target="#hot-take-zone">Make decisions with scalar parameters.</b>
+            </td>
+          </tr>
 
-        <p>So we want to choose a metric that is closer to the experiment.  But ultimately, it still needs to move our bottom-line goal metrics.  This balancing act makes choosing how to measure experiment success critical and difficult.</p>
+          <tr>
+            <td style="padding-bottom: 1em">            
 
-        <p>Basic rules:</p>
+              <b class="projlink"
+                 hx-trigger="click"
+                 hx-get="complex_models.html"
+                 hx-target="#hot-take-zone">Complex models need an explanation of exactly what data they use to answer a question. Black boxes are bad.</b>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-bottom: 1em">
 
-        <ol>
-          <li> Decide on the metric that defines success prior to the experiment.
-          <li> Limit the number of metrics that define success so that decision-making is clear and well-specified prior to the experiment.
-          <li> Reduce the set of metrics to consider to those that have a demonstrated relationship with an ultimate goal of the business (revenue, engagement, profit, etc).
-          <li> Choose the metric most directly impacted by the experimental intervention from among this set.
-        </ol>
+              <b class="projlink"
+                 hx-trigger="click"
+                 hx-get="numerical_optimization.html"
+                 hx-target="#hot-take-zone">Numerical optimization is a hard problem not an afterthought.</b>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding-bottom: 1em">
+              <b class="projlink"
+                 hx-trigger="click"
+                 hx-get="weaker_theory.html"
+                 hx-target="#hot-take-zone">The weaker the theory, the more robust the results. The stronger the theory, the more meaningful the results.</b>
+            </td>
+          </tr>
+        </table>
       </div>
-      
-      <button class="accordion">Failed experiments are the value of experimentation.</button>
-      <div class="panel">
-        <p>When we develop a new product feature, we think it is a good thing.  Why else would we build it?  So, without experimentation, we would launch our new feature.</p>
 
-        <p>If the experiment wins, then we just do what we would have done anyway.  So experimentation provides no (ex-post) value.</p>
-
-        <p>If the experiment loses, then we do not launch the feature.  Now the experiment provides value because it changes our decision.</p>
-
-        <p>So experiments are valuable when they lose not when they win.</p>
-
+      <div style="width:48%;float:right">
+        <table style="border: 0.1em solid black;width:100%">
+          <tr> 
+           <th style="background-color: #eee">Hot Take.</th>
+          </tr>
+          <tr>
+            <td id="hot-take-zone">
+              <p>[Click links to insert hot takes.]</p>
+            </td>
+          </tr>
+        </table>
       </div>
 
-      <button class="accordion">Complex models need an explanation of exactly what data they use to answer a question. Black boxes are bad.</button>
-      <div class="panel">
-        <p>Clean, unconfounded variation in non-experimental data is rare.  So we need to rely on well-founded models to do causal analysis.  These models can be complex, and the tie between the data and model’s conclusion can get lost.</p>
-
-        <p>But all model results are ultimately <i>some</i> function of the data.  Understanding what the function looks like, and whether it makes sense that these data objects inform the ultimate causal question of interest is critical to evaluating whether the model and analysis are reasonable.</p>
-      </div>
-
-      <button class="accordion">Numerical optimization is a hard problem not an afterthought.</button>
-      <div class="panel">
-        <p>“Maximize the log-likelihood” and “minimize the loss function” sound like much more straightforward operations than they are in practice.</p>
-
-        <p>“Minimize loss” is a <i>hard</i> problem unless the function has structure (convexity).  Thinking about how exactly to solve the problem is critical for using estimators based on optimization in practice.  </p>
-
-        <p>The numerical algorithm should use the structure of the optimization problem to get the right results.  We can't assume that just running the problem through Nelder-Mead or Newton methods will find the optimum result!  In all likelihood, it will not.</p>
-      </div>
-
-      <button class="accordion">The weaker the theory, the more robust the results. The stronger the theory, the more meaningful the results.</button>
-      <div class="panel">
-        <p>When you use only a weak theory (weak assumptions), the problem in the analysis is: am I measuring the right thing?  When analyzing an experiment/difference-in-difference/synthetic controls/etc, one of the main questions is: am I looking at the right outcome variable?</p>
-
-        <p>When you use a strong theory (an explicit model, strong assumptions), the problem in the analysis is: are these assumptions <i>true</i>? But the problem of measurement is less difficult because the theory itself  proscribes the right metric.</p>
-      </div>
     </div>
-    <script>
-      setupAccordion();
-      includeHTML();
-    </script>
   </body>
 </html>

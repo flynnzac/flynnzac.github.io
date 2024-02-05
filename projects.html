@@ -19,9 +19,10 @@
 
       gtag('config', 'UA-59441513-2');
     </script>
+    <script src="htmx.min.js.js"></script>
   </head>
   <body>
-    <div class="header" w3-include-html="header.html"></div>
+    <div class="header" hx-trigger="load" hx-get="header.html"></div>
 
     <div class="body">
 
@@ -29,41 +30,84 @@
 
       <p>Examples of (public, not-directly-work) projects I've worked on. See my <a href="cv.pdf">CV</a> for examples of projects I've worked on for employers.</p>
 
-      <button class="accordion">Estimating quantile treatments efficiently in experiments</button>
-      <div class="panel">
-        <p>When we run experiments, we look for ways to make them find results faster.  After all, it’s a business and speed matters.  Usually, we use a CUPED-like method.  But these methods only work for average treatment effects.  In this short blog post, I show how to do this for quantile treatment effects (spoiler: it’s not quantile regression, that does not work in this context).</p>
-
-        <p><a href="https://medium.com/udemy-engineering/accelerating-online-experiments-that-target-quantile-treatment-effects-dffa749694f7">Blog post.</a></p>
-      </div>
-
-      <button class="accordion">Bounding long run treatment effects</button>
-      <div class="panel">
-        <p>A key problem in experimentation: how can we learn about long-run impacts from short-run experiment results? Surrogacy methods impose very strong assumptions to get at a solution.  This blog posts looks at methods to relax those assumptions to get more robust bounds on long run effects.
-
-        <p><a href="https://medium.com/@zlflynn/bounds-on-long-run-treatment-effects-via-d-surrogacy-27e871a89dfc">Blog post.</a></p>
-      </div>
       
-      <button class="accordion">Measuring productivity</button>
-      <div class="panel">
-        <p>Measuring productivity, how much a production plant produces for a fixed set of inputs, is a difficult problem.  It is difficult because more productive plants demand different levels of the factors of production (labor, capital, materials, etc).  The relationship between output and inputs alone does not reveal productivity.  Standard approaches to solve this problem require a heavy dose of theory &mdash; much of which is more about assumptions needed to estimate the model and less about robust predictions from economic theory.  This paper derives a robust prediction from economic theory and shows how to use it to learn how productivity varies across plants with only weak assumptions.</p>
+      <div style="width:50%;float:left">
+        <table style="width:100%; border: 0.1em solid black">
+          <tr>
+            <th style="background-color: #eee">Projects</th>
+          </tr>
+          <tr >
+            <td style="padding-bottom: 1em">
+              <b class="projlink"
+                 hx-trigger="click"
+                 hx-get="estimating_quantile_treatment_effects.html"
+                 hx-target="#hot-take-zone">Estimating quantile treatments efficiently in experiments.</b>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-bottom: 1em">
+              <b class="projlink"
+                 hx-trigger="click"
+                 hx-get="bound_long_run_te.html"
+                 hx-target="#hot-take-zone">Bounding long run treatment effects.</b>
+            </td>
+          </tr>
 
-        <p>Check it out: <a href="https://zflynn.com/papers/pit_zf.pdf">https://zflynn.com/papers/pit_zf.pdf</a></p>
+          <tr>
+            <td style="padding-bottom: 1em">            
+
+              <b class="projlink"
+                 hx-trigger="click"
+                 hx-get="genvar.html"
+                 hx-target="#hot-take-zone">Enable Stata-like data manipulation in R.</b>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-bottom: 1em">
+
+              <b class="projlink"
+                 hx-trigger="click"
+                 hx-get="pit.html"
+                 hx-target="#hot-take-zone">Measuring productivity (Identifying productivity when it is a factor of production)</b>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding-bottom: 1em">
+              <b class="projlink"
+                 hx-trigger="click"
+                 hx-get="sip.html"
+                 hx-target="#hot-take-zone">Inference based on continuous linear inequalities via semi-infinite programming.</b>
+            </td>
+          </tr>
+
+          
+          <tr>
+            <td style="padding-bottom: 1em">
+              <b class="projlink"
+                 hx-trigger="click"
+                 hx-get="markups.html"
+                 hx-target="#hot-take-zone">Measuring markups with production data (with Amit Gandhi and James Traina).</b>
+            </td>
+          </tr>
+        </table>
       </div>
 
-      <button class="accordion">Enable Stata-like data manipulation in R</button>
-      <div class="panel">
-        <p>I wrote genvar, an R package, that introduces an imperative, Stata-like data manipulation/regression syntax to R.  The purpose of the project is to make the transition to R friendlier for people coming from fields that predominantly use Stata or other imperative data manipulation environments.  By imperative, I mean an environment where a series of commands are executed on a dataset to produce a result.</p>
-
-        <p>Check it out: <a href="https://github.com/flynnzac/genvar">https://github.com/flynnzac/genvar</a>.</p>
+      <div style="width:48%;float:right">
+        <table style="border: 0.1em solid black;width:100%">
+          <tr> 
+            <th style="background-color: #eee">About</th>
+          </tr>
+          <tr>
+            <td id="hot-take-zone">
+              <p>[Click links to learn about projects.]</p>
+            </td>
+          </tr>
+        </table>
       </div>
 
     </div>
-</div>
 
-<script>
-  setupAccordion();
-  includeHTML();
-</script>
 
 </body>
 </html>

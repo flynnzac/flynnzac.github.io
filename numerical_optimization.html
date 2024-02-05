@@ -1,0 +1,7 @@
+<p><b>Numerical optimization is a hard problem not an afterthought.</b></p>
+
+<p>“Maximize the log-likelihood” and “minimize the loss function” sound like much more straightforward operations than they are in practice.</p>
+
+<p>“Minimize loss” is a <i>hard</i> problem unless the function has structure (convexity).  Thinking about how exactly to solve the problem is critical for using estimators based on optimization in practice.  </p>
+
+<p>The numerical algorithm should use the structure of the optimization problem to get the right results.  We can't assume that just running the problem through Nelder-Mead or Newton methods will find the optimum result!  In all likelihood, it will not.</p>

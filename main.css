@@ -1,12 +1,14 @@
 .body {
-    width: 95%;
-    margin-left: 2.5%;
+    width: 70%;
+    margin-left: 15%;
     margin-top: 1em;
     font-family: 'Noto Serif', serif;
 }
 
 .header {
     font-family: 'Noto Serif', serif;
+    width: 70%;
+    margin-left: 15%;
 }
 
 .header a {
@@ -16,6 +18,10 @@
     font-weight: bold;
 }
 
+.text {
+    border: 0.1em solid black;
+}
+
 .header a:hover {
     color: purple;
     font-weight: bold;
@@ -23,8 +29,6 @@
 
 .page-title {
     font-size: 16pt;
-    padding-top: 1em;
-    padding-bottom: 1em;
 }
 
 .page-lower-title {
@@ -70,4 +74,13 @@
 
 .active:after {
   content: "\025BC"; /* Unicode character for "minus" sign (-) */
+}
+
+.projlink {
+    cursor: pointer;
+    color: blue;
+}
+
+.projlink:hover {
+    color: red;
 }

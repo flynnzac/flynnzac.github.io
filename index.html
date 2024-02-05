@@ -19,38 +19,81 @@
 
       gtag('config', 'UA-59441513-2');
     </script>
+    <script src="htmx.min.js.js"></script>
   </head>
   <body>
-    <div class="header" w3-include-html="header.html"></div>
+    <div class="header" hx-trigger="load" hx-get="header.html"></div>
 
-    <div class="body">
-      <div class="page-title">Howdy!</div>
-      
-      <div id="text" style="width:50%; float:left">
-        <p>I am an <b>Economist</b> and <b>Data Scientist</b>.  I use data to learn what people want and how best to provide it.  I analyze experiments, estimate demand and supply, and build models to inform product design decisions.  I have worked in the technology industry (Amazon, Udemy, Afiniti) and in litigation consulting (Compass Lexecon). I currently work for Udemy. I have a PhD in Economics from the University of Wisconsin, Madison.</p>
+    <section class="body">
+      <table class="text" style="width:50%; float:left">
+        <tr>
+          <th style="background-color:#eee">Introduction</th>
+        </tr>
+        <td>
+          <p>I am an <b>Economist</b> and <b>Data Scientist</b>.  I use data to learn what people want and how best to provide it.  I analyze experiments, estimate demand and supply, and build models to inform product design decisions.  I have worked in the technology industry (Amazon, Udemy, Afiniti) and in litigation consulting (Compass Lexecon). I currently work for Udemy. I have a PhD in Economics from the University of Wisconsin, Madison.</p>
 
-        <p><b>I try to do good data analysis and build tools to help others do so.</b></p>
+          <p><b>I try to do good data analysis and build tools to help others do so.</b></p>
 
-        <p>Good data analysis combines theory and statistics.</p>
+          <p>Good data analysis combines theory and statistics.</p>
 
-        <p><b>Theory</b> models how the real world generates the data, whether by the choices people make or by random assignment in an experiment.  Theory also tells us what metrics matter for success and gives insight on what improvements we might make to our products.  Theory is our model of the world and the lens through which we interpret data.</p>
+          <p><b>Theory</b> models how the real world generates the data, whether by the choices people make or by random assignment in an experiment.  Theory also tells us what metrics matter for success and gives insight on what improvements we might make to our products.  Theory is our model of the world and the lens through which we interpret data.</p>
 
-        <p><b>Statistics</b> listens to what the data says, independent of a model. Statistics summarizes the data as it is.</p>
-        
-        <p>But we are rarely interested in the data as it is.  We want to know how it would otherwise be if our product were designed or priced differently. So statistics alone rarely answers an interesting question.  It can never show what causes what.  But statistics <i>combined</i> with a model is a powerful tool.</p>
+          <p><b>Statistics</b> listens to what the data says, independent of a model. Statistics summarizes the data as it is.</p>
+          
+          <p>But we are rarely interested in the data as it is.  We want to know how it would otherwise be if our product were designed or priced differently. So statistics alone rarely answers an interesting question.  It can never show what causes what.  But statistics <i>combined</i> with a model is a powerful tool.</p>
 
-        <p>I try to use that tool and also will the San Diego Padres (hometown) and Chicago Bears (now-town) to win despite a lack of statistical (or theoretical) evidence that the amount of time I spend watching games or listening to <a href="https://twitter.com/670TheScore">670 The Score</a> has any connection to their success.</p>
+          <p>I try to use that tool and also will the San Diego Padres (hometown) and Chicago Bears (now-town) to win despite a lack of statistical (or theoretical) evidence that the amount of time I spend watching games or listening to <a href="https://twitter.com/670TheScore">670 The Score</a> has any connection to their success.</p>
 
-        <p><b>Feel free to reach out to either e-mail (zlflynn@gmail.com) or via <a href="https://www.linkedin.com/in/zlflynn/">LinkedIn</a> if you think I'd be a good fit for any project or team or if you'd like to talk about any projects, paper, data analysis in general, etc!</b></p>
+          <p><b>Feel free to reach out to either e-mail (zlflynn@gmail.com) or via <a href="https://www.linkedin.com/in/zlflynn/">LinkedIn</a> if you think I'd be a good fit for any project or team or if you'd like to talk about any projects, paper, data analysis in general, etc!</b></p>
 
-      </div>
+        </td>
+</tr>
+</table>
 
-      <div id="photo" style="width:45%; float:left">
-        <img src="me_revised.png" style="margin-left: 5%; margin-top:5%" alt="Zach Flynn">
-      </div>
-    </div>
-    <script>
-      includeHTML();
-    </script>
-  </body>
+<div style="width:45%; float:left;padding-left:1em">
+  <table style="border: 0.1em solid black;width: 100%">
+    <tr>
+      <th colspan="2" style="background-color: #eee">Contact</th>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td>Zach Flynn</td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td>zlflynn@gmail.com</td>
+    </tr>
+    <tr>
+      <td>LinkedIn</td>
+      <td><a href="https://www.linkedin.com/in/zlflynn/">https://www.linkedin.com/in/zlflynn/</a></td>
+    </tr>
+    <tr>
+      <td>Twitter/X</td>
+      <td><a href="https://www.twitter.com/zlflynn/">https://www.twitter.com/zlflynn/</a></td>
+    </tr>
+    <tr>
+      <td>Github</td>
+      <td><a href="https://www.github.com/flynnzac/">https://www.github.com/flynnzac/</a></td>
+    </tr>
+  </table>
+
+  <table style="border: 0.1em solid black; width: 100%; margin-top: 1em">
+    <tr>
+      <th style="background-color: #eee">Picture</th>
+    </tr>
+    <tr>
+      <td>
+        <center>
+          <img src="me_revised.png" style="margin-top:5%" alt="Zach Flynn">
+        </center>
+      </td>
+    </tr>
+  </table>
+  
+</div>
+</section>
+<script>
+  includeHTML();
+</script>
+</body>
 </html>

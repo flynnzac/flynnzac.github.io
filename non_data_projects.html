@@ -16,40 +16,66 @@
       gtag('config', 'UA-59441513-2');
     </script>
 
+    <script src="htmx.min.js.js"></script>
+
   </head>
   <body>
-    <div class="header" w3-include-html="header.html"></div>
+    <div class="header" hx-trigger="load" hx-get="header.html"></div>
     <div class="body">
       <div class="page-title">Non-Data Projects</div>
       
       <p>I write programs sometimes for non-data things. Usually either to solve a non-work problem or just for fun.</p>
 
-      <button class="accordion">SLOBIL: a programming language for command-based interactive programs</button>
-      <div class="panel">
-        <p>On the bus to work in DC (circa 2018), I started writing a programming language that I thought would work well for quickly spinning up interactive programs... and would make the bus ride less boring. It has gotten seriously out of hand and now has a prototype-based object system, multi-tasking, etc.  Practically, it's a quick way to spin up a small program that needs to be interactive. I've used it to write several programs to organize myself. It's also just fun to write.</p>
+      <div style="width:50%;float:left">
+        <table style="width:100%; border: 0.1em solid black">
+          <tr>
+            <th style="background-color: #eee">Project</th>
+          </tr>
+          <tr >
+            <td style="padding-bottom: 1em">
+              <b class="projlink"
+                 hx-trigger="click"
+                 hx-get="slobil.html"
+                 hx-target="#hot-take-zone">SLOBIL: a programming language for command-based interactive programs.</b>
+            </td>
+          </tr>
 
-        <p>See: the <a href="https://zflynn.com/slobil/slobil.html">manual</a> and the Github: <a href="https://github.com/flynnzac/slobil">https://github.com/flynnzac/slobil</a>.</p>
+          <tr>
+            <td style="padding-bottom: 1em">
+              <b class="projlink"
+                 hx-trigger="click"
+                 hx-get="leas.html"
+                 hx-target="#hot-take-zone">Leas: the Little Extensible Accounting System.</b>
+            </td>
+          </tr>
+
+          
+          <tr>
+            <td style="padding-bottom: 1em">            
+
+              <b class="projlink"
+                 hx-trigger="click"
+                 hx-get="pushmac.html"
+                 hx-target="#hot-take-zone">pushmac: a stack-based macro language.</b>
+            </td>
+          </tr>
+        </table>
       </div>
 
-      <button class="accordion">Leas: the Little Extensible Accounting System</button>
-      <div class="panel">
-        <p>I wrote the “Little Extensible Accounting System” or Leas when I was budgeting for my wedding.  It’s kind of the Emacs of personal finance (without the popularity).  You can extend it by writing Scheme (a Lisp dialect).  Most of the system is written in Scheme that calls C functions.  I use the extensibility to do things like fetch the latest stock/mutual fund prices, etc.</p>
-
-        <p>See: <a href="https://github.com/flynnzac/leas">https://github.com/flynnzac/leas</a>.</p>
+      <div style="width:48%;float:right">
+        <table style="border: 0.1em solid black;width:100%">
+          <tr> 
+           <th style="background-color: #eee">About</th>
+          </tr>
+          <tr>
+            <td id="hot-take-zone">
+              <p>[Click links to learn about projects.]</p>
+            </td>
+          </tr>
+        </table>
       </div>
 
-      <button class="accordion">pushmac: a stack-based macro language</button>
-      <div class="panel">
-        <p>pushmac is a small macro language that aims to be a flexible way to template code and other text.  I used it for a decent part of SLOBIL.</p>
-
-        <p>See: <a href="https://github.com/flynnzac/pushmac">https://github.com/flynnzac/pushmac</a>.</p>
-      </div>
-      
     </div>
-    <script>
-      setupAccordion();
-      includeHTML();
-    </script>
 
   </body>
 </html>
