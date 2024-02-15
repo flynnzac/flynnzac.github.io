@@ -22,6 +22,21 @@
     <script src="htmx.min.js.js"></script>
   </head>
   <body>
+    <script>
+      document.addEventListener('htmx:afterRequest', function (evt) {
+
+          var path = evt.detail.pathInfo.requestPath;
+
+          if (path === "header.html") {
+          }
+          else {
+              var permalink = document.getElementById("permalink");
+              var url = "https://zflynn.com/" + path;
+              permalink.innerHTML = "<p>Direct link: <a href=\"" + url + "\">" + url + "</a></p>";
+          }
+      });
+    </script>
+    
     <div class="header" hx-trigger="load" hx-get="header.html"></div>
 
     <div class="body">
@@ -43,6 +58,8 @@
           </tr>
         </table>
       </div>
+
+      <div id="permalink"></div>
 
       <div style="width:100%">
         <table style="border: 0.1em solid black; width:100%">
