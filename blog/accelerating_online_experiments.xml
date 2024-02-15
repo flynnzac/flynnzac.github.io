@@ -7,14 +7,6 @@
   </meta>
 
   <section name="intro" title="">
-
-    <script>
-      var disqus_config = function () {
-      this.page.url = "https://zflynn.com/blog/accelerating_online_experiments.html";  
-      this.page.identifier = "Accelerating Online Experiments That Target Quantile Treatment Effects";
-      };
-    </script>
-
     
     <p>At Udemy, we run hundreds of A/B-style experiments per year on our experimentation platform. One of the biggest challenges we’ve faced is the need to run experiments faster to enable our product and engineering teams to rapidly ship more new product innovations to our customers.</p>
 
