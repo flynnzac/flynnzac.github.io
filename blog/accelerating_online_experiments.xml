@@ -7,6 +7,8 @@
   </meta>
 
   <section name="intro" title="">
+
+    <p>Cross-post from <a href="https://medium.com/udemy-engineering/accelerating-online-experiments-that-target-quantile-treatment-effects-dffa749694f7">Udemy Engineering Blog</a>.</p>
     
     <p>At Udemy, we run hundreds of A/B-style experiments per year on our experimentation platform. One of the biggest challenges we’ve faced is the need to run experiments faster to enable our product and engineering teams to rapidly ship more new product innovations to our customers.</p>
 
