@@ -81,8 +81,8 @@
     <p>We use an asymptotic approach to construct confidence intervals because it is faster to compute than bootstrap or subsampling methods. The key idea is to represent the problem as a <a href="https://en.wikipedia.org/wiki/Generalized_method_of_moments">“Generalized Method of Moments”</a> estimator with the following moment conditions corresponding to <m>y_[1]</m>:</p>
 
     <m style="display">
-      @bbb[E] lbracket (p - b) times 1( "Treatment Indicator" = 0 ) - 1(Y le y_[1], "Treatment Indicator" = 0) rbracket = 0
-      @bbb[E] lbracket ([1], ["Treatment Indicator"], [Y("pre" )]) ( 1(Y le y_[1]) - a - b times "Treatment Indicator" - gamma times Y("pre") ) rbracket = 0
+      @bb[E] lbracket (p - b) times 1( "Treatment Indicator" = 0 ) - 1(Y le y_[1], "Treatment Indicator" = 0) rbracket = 0
+      @bb[E] lbracket ([1], ["Treatment Indicator"], [Y("pre" )]) ( 1(Y le y_[1]) - a - b times "Treatment Indicator" - gamma times Y("pre") ) rbracket = 0
     </m>
 
     <p>
@@ -93,7 +93,7 @@
 
     <m style="display">
       (y_[1], a_[1], b_[1], gamma_[1], y_[0], a_[0], b_[0], gamma_[0]) = theta
-      @bbb[E] m( theta ) = 0
+      @bb[E] m( theta ) = 0
     </m>
 
     <p>
@@ -101,11 +101,11 @@
     </p>
 
     <p>
-      The one wrinkle is that in the standard formulation of the asymptotic variance formula for GMM, the expectation of the derivative of the moment expression shows up, i.e., <m>G = @bbb[E]( Dm )</m>:
+      The one wrinkle is that in the standard formulation of the asymptotic variance formula for GMM, the expectation of the derivative of the moment expression shows up, i.e., <m>G = @bb[E]( Dm )</m>:
     </p>
 
     <m style="display">
-      n times "var"(theta) = ( G^[top] @bbb[E]{m m^[top]}^[-1] G)^[-1]
+      n times "var"(theta) = ( G^[top] @bb[E]{m m^[top]}^[-1] G)^[-1]
     </m>
 
     <p>
