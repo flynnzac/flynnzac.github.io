@@ -82,7 +82,7 @@
 
     <m style="display">
       @bb[E] lbracket (p - b) times 1( "Treatment Indicator" = 0 ) - 1(Y le y_[1], "Treatment Indicator" = 0) rbracket = 0
-      @bb[E] lbracket ([1]; ["Treatment Indicator"]; [Y("pre" )]) ( 1(Y le y_[1]) - a - b times "Treatment Indicator" - gamma times Y("pre") ) rbracket = 0
+      @bb[E] { ([1]; ["Treatment Indicator"]; [Y("pre" )]) ( 1(Y le y_[1]) - a - b times "Treatment Indicator" - gamma times Y("pre") ) } = 0
     </m>
 
     <p>
