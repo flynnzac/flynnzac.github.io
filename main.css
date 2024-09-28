@@ -30,6 +30,11 @@
     margin-bottom: 1em;
 }
 
+.tooltitle {
+    background-color: #eee;
+    padding: 0.5em;
+}
+
 .header a:hover {
     color: purple;
     font-weight: bold;
