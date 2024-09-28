@@ -22,6 +22,11 @@
     border: 0.1em solid black;
 }
 
+.toolunit {
+    border: 0.1em solid black;
+    padding: 1em;
+}
+
 .header a:hover {
     color: purple;
     font-weight: bold;
