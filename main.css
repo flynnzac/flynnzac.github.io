@@ -97,3 +97,9 @@
 .projlink:hover {
     color: red;
 }
+
+.researchtable th, td {
+    padding: 1em;
+}
+             
+    
