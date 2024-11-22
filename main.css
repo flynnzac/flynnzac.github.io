@@ -23,7 +23,6 @@
 }
 
 .toolunit {
-    border: 0.1em solid black;
     padding-left: 1em;
     padding-right: 1em;
     padding-bottom: 1em;
@@ -32,8 +31,8 @@
 
 .tooltitle {
     background: #eee;
-    padding: 0.5em;
-}
+    text-align:left;
+ }
 
 .header a:hover {
     color: purple;
