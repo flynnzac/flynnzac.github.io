@@ -12,6 +12,17 @@
     border: 0px;
 }
 
+.headertable a {
+    padding: 0.5em;
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+.headertable a:hover {
+    color: purple;
+    font-weight: bold;
+}
+
 .text {
     border: 0.1em solid black;
 }
@@ -26,7 +37,7 @@
 .tooltitle {
     background: #eee;
     text-align:left;
- }
+}
 
 
 .page-title {
@@ -38,19 +49,19 @@
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
-    
+
 
 .accordion {
-  background-color: #eee;
-  color: black;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-  font-size: 14pt;
-  font-family: 'Noto Serif', serif;
+    background-color: #eee;
+    color: black;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 14pt;
+    font-family: 'Noto Serif', serif;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -61,21 +72,21 @@
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-  overflow: hidden;
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
 }
 .accordion:after {
-  content: '\025B6'; /* Unicode character for "plus" sign (+) */
-  font-size: 12pt;
-  color: black;
-  float: left;
-  margin-right: 1em;
+    content: '\025B6'; /* Unicode character for "plus" sign (+) */
+    font-size: 12pt;
+    color: black;
+    float: left;
+    margin-right: 1em;
 }
 
 .active:after {
-  content: "\025BC"; /* Unicode character for "minus" sign (-) */
+    content: "\025BC"; /* Unicode character for "minus" sign (-) */
 }
 
 .projlink {
@@ -91,5 +102,5 @@
     padding-left: 1em;
     padding-right: 1em;
 }
-             
-    
+
+
