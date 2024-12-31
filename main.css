@@ -12,13 +12,6 @@
     border: 0px;
 }
 
-.header a {
-    padding: 0.5em;
-    text-decoration: none;
-    color: blue;
-    font-weight: bold;
-}
-
 .text {
     border: 0.1em solid black;
 }
@@ -35,10 +28,6 @@
     text-align:left;
  }
 
-.header a:hover {
-    color: purple;
-    font-weight: bold;
-}
 
 .page-title {
     font-size: 16pt;

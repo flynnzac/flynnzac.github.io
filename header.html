@@ -1,31 +1,63 @@
-<table width="100%" style="background-color: #eee">
-  <tr>
-    <td width="34%">
-      <a href="index.html" target="_top">Home</a>
-      <a href="hot_takes.html" target="_top">Hot Takes</a>      
-      <a href="https://medium.com/@zlflynn" target="_top">Blog</a>
-      <a href="projects.html" target="_top">Projects</a>
-      <a href="research.html" target="_top">Papers</a>
-      <a href="toolshed.html" target="_top">Toolshed</a>
-      <a href="cv.pdf" target="_top">CV/Resume</a>
-    </td>
-    <td width="33%">
-      <center><font size="6"><marquee>Zach Flynn</marquee></font></center>
-    </td>
-    <td width="33%">
-      <a href="https://www.linkedin.com/in/zlflynn/" target="_top">
-        <img src="in.png" style="width:2em;height:2em">
-      </a>
-      <a href="https://www.twitter.com/zlflynn/" target="_top">
-        <img src="x-black.png" style="width:2em;height:2em">
-      </a>
-      <a href="https://www.github.com/flynnzac/" target="_top">
-        <img src="github-mark.png" style="width:2em;height:2em">
-      </a>
+<html>
+  <body>
+    <style>
+      .headertable a {
+          padding: 0.5em;
+          text-decoration: none;
+          color: blue;
+          font-weight: bold;
+      }
+      .headertable a:hover {
+          color: purple;
+          font-weight: bold;
+      }
+    </style>
+    <script>
+      window.addEventListener("load", (event) => {
+          const el = document.querySelector("html");
 
-      zlflynn@gmail.com
-    </td>
-  </tr>
-</table>
-<hr>
+          const styles = window.getComputedStyle(el);
+          const margin = parseFloat(styles['marginTop']) + parseFloat(styles['marginBottom']);
+          const height = Math.ceil(el.offsetHeight + margin) + 5;
 
+          window.parent.postMessage({
+              type: "resize",
+              value: height
+          }, "*");
+      });
+    </script>
+
+    <div class="headertable">
+      <table width="100%" style="background-color: #eee">
+        <tr>
+          <td width="34%">
+            <a href="index.html" target="_top">Home</a>
+            <a href="hot_takes.html" target="_top">Hot Takes</a>      
+            <a href="https://medium.com/@zlflynn" target="_top">Blog</a>
+            <a href="projects.html" target="_top">Projects</a>
+            <a href="research.html" target="_top">Papers</a>
+            <a href="toolshed.html" target="_top">Toolshed</a>
+            <a href="cv.pdf" target="_top">CV/Resume</a>
+          </td>
+          <td width="33%">
+            <center><font size="6"><marquee>Zach Flynn</marquee></font></center>
+          </td>
+          <td width="33%">
+            <a href="https://www.linkedin.com/in/zlflynn/" target="_top">
+              <img src="in.png" style="width:2em;height:2em">
+            </a>
+            <a href="https://www.twitter.com/zlflynn/" target="_top">
+              <img src="x-black.png" style="width:2em;height:2em">
+            </a>
+            <a href="https://www.github.com/flynnzac/" target="_top">
+              <img src="github-mark.png" style="width:2em;height:2em">
+            </a>
+
+            zlflynn@gmail.com
+          </td>
+        </tr>
+      </table>
+    </div>
+
+  </body>
+</html>

@@ -1,15 +1,6 @@
 <!doctype html>
 <html>
   <head>
-    <title>Zach Flynn: Hot Takes</title>
-    <meta name="description" content="Zach Flynn is an economist and dat scientist and this website has links to his projects and research.">
-    <meta name="keywords" content="economics,Zach Flynn,productivity,industrial organization,statistics,data science">
-    <meta name="author" content="Zach Flynn">
-    <link rel="stylesheet" href="main.css">
-    <script src="main.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300&display=swap" rel="stylesheet">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59441513-2"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -18,7 +9,24 @@
 
       gtag('config', 'UA-59441513-2');
     </script>
+    <title>Zach Flynn: Hot Takes</title>
+    <meta name="description" content="Zach Flynn is an economist and dat scientist and this website has links to his projects and research.">
+    <meta name="keywords" content="economics,Zach Flynn,productivity,industrial organization,statistics,data science">
+    <meta name="author" content="Zach Flynn">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300&display=swap" rel="stylesheet">
     <script src="htmx.min.js.js"></script>
+    <script>
+      window.addEventListener("message", (event) => {
+          if (event.data.type === "resize") {
+              const iframe = document.getElementById('headerframe');
+              iframe.height = event.data.value + "px";
+          }
+      }, false);
+    </script>
+
     <link rel="icon" 
           type="image/png" 
           href="me_2024_lowres.png">
@@ -26,37 +34,9 @@
   </head>
 
   <body>
-        <div class="header">
-      <table width="100%" style="background-color: #eee">
-        <tr>
-          <td width="34%">
-            <a href="index.html" target="_top">Home</a>
-            <a href="hot_takes.html" target="_top">Hot Takes</a>      
-            <a href="https://medium.com/@zlflynn" target="_top">Blog</a>
-            <a href="projects.html" target="_top">Projects</a>
-            <a href="research.html" target="_top">Papers</a>
-            <a href="toolshed.html" target="_top">Toolshed</a>
-            <a href="cv.pdf" target="_top">CV/Resume</a>
-          </td>
-          <td width="33%">
-            <center><font size="6"><marquee>Zach Flynn</marquee></font></center>
-          </td>
-          <td width="33%">
-            <a href="https://www.linkedin.com/in/zlflynn/" target="_top">
-              <img src="in.png" style="width:2em;height:2em">
-            </a>
-            <a href="https://www.twitter.com/zlflynn/" target="_top">
-              <img src="x-black.png" style="width:2em;height:2em">
-            </a>
-            <a href="https://www.github.com/flynnzac/" target="_top">
-              <img src="github-mark.png" style="width:2em;height:2em">
-            </a>
-
-            zlflynn@gmail.com
-          </td>
-        </tr>
-      </table>
-      <hr>
+    <div class="header">
+      <iframe id="headerframe" src="header.html" style="width:100%;border:none;" marginwidth="0" marginheight="0"></iframe>
+      <hr/>
     </div>
 
     <div class="body">
