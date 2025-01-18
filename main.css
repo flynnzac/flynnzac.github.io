@@ -53,10 +53,9 @@
 }
 
 .tooltitle {
-    background: #eee;
     text-align:left;
+    padding-left: 1em;
 }
-
 
 .page-title {
     font-size: 16pt;
