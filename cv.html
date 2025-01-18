@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59441513-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-59441513-2');
+    </script>
+    <meta name="description" content="Zach Flynn is an economist and dat scientist and this website has links to his projects and research.">
+    <meta name="keywords" content="economics,Zach Flynn,productivity,industrial organization,statistics,data science">
+    <meta name="author" content="Zach Flynn">
+
+    <title>Zach Flynn: CV</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300,700&display=swap" rel="stylesheet">
+
+    <script src="htmx.min.js.js"></script>
+    <link rel="icon" 
+          type="image/png" 
+          href="me_2024_lowres.png">
+    
+    <script>
+      window.addEventListener("message", (event) => {
+          if (event.data.type === "resize") {
+              if (event.data.kind === "header") {
+                  const iframe = document.getElementById('headerframe');
+                  iframe.height = event.data.value + "px";
+              }
+              if (event.data.kind === "cv") {
+                  const cvframe = document.getElementById('cvframe');
+                  cvframe.height = event.data.value + "px";
+              }
+          }
+      }, false);
+    </script>
+    
+  </head>
+  <body>
+    <div class="header">
+      <iframe id="headerframe" src="header.html" style="width:100%;border:none;" marginwidth="0" marginheight="0"></iframe>
+    </div>
+
+
+    <div class="body">
+
+      <table class="text" style="margin-bottom:1em">
+        <tr><th class="textheader">Description</th></tr>
+        <tr>
+          <td>
+            My CV. Available in PDF, as well: <a href="cv.pdf">[pdf]</a>.
+          </td>
+        </tr>
+      </table>
+      
+      <table class="text" style="margin-bottom:1em">
+        <tr>
+          <th class="textheader">CV</th>
+        </tr>
+        <tr>
+          <td>
+            <iframe id="cvframe" src="slides/cv.html" style="width:100%;border:none" marginwidth="0" marginheight="0"></iframe>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

@@ -19,7 +19,8 @@
 
           window.parent.postMessage({
               type: "resize",
-              value: height
+              value: height,
+              kind: "header"
           }, "*");
       });
     </script>
@@ -33,7 +34,7 @@
             <a href="projects.html" target="_top">Projects</a>
             <a href="research.html" target="_top">Papers</a>
             <a href="toolshed.html" target="_top">Toolshed</a>
-            <a href="cv.pdf" target="_top">CV</a>
+            <a href="cv.html" target="_top">CV</a>
           </td>
           <td width="33%">
             <center><font size="6"><marquee>Zach Flynn</marquee></font></center>

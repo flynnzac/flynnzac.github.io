@@ -1,0 +1,188 @@
+<script>
+  window.addEventListener("load", (event) => {
+      const el = document.querySelector("html");
+
+      const styles = window.getComputedStyle(el);
+      const margin = parseFloat(styles['marginTop']) + parseFloat(styles['marginBottom']);
+      const height = Math.ceil(el.offsetHeight + margin) + 5;
+
+      window.parent.postMessage({
+          type: "resize",
+          value: height,
+          kind: "cv"
+      }, "*");
+  });
+</script>
+<h1>Zach Flynn</h1>
+
+<h2 id="heading1">Info</h2>
+
+<ul>
+  <li>Website:
+    <a href="https://zflynn.com">https://zflynn.com</a></li>
+  <li>Email: zlflynn@gmail.com</li>
+  <li>LinkedIn: <a href="https://www.linkedin.com/in/zlflynn">https://www.linkedin.com/in/zlflynn</a></li>
+  <li>Github: <a href="https://github.com/flynnzac">https://github.com/flynnzac</a></li>
+  <li>Skills: Economics (Industrial Organization, Econometrics), Machine Learning, Data Science</li>
+  <li>Current and Prior Employers: Udemy (an EdTech company), Compass Lexecon (an Economic Consulting company), Afiniti (an AI company), Amazon (an internet company)</li>
+</ul>
+
+<h2 id="heading2">Education</h2>
+
+
+<p style="margin-top: 1em">PhD in Economics</p>
+
+<ul>
+  <li>The University of Wisconsin - Madison (2012-2017)</li>
+  <li>Fields: Industrial Organization and Econometrics.</li>
+  <li>Dissertation title: Measuring productivity and market power.</li>
+</ul>
+
+<p>BS in Economics and Mathematics</p>
+
+<ul>
+  <li>Tulane University (2008-2012)</li>
+</ul>
+
+<h2 id="heading3">Employment</h2>
+
+<p style="margin-top: 1em"><a href="https://udemy.com">Udemy</a></p>
+<ul>
+  <li>Senior Staff Data Scientist, Chicago, IL</li>
+  <li>August 2022 to present</li>
+  <li>Developed from the ground-up a new analysis framework for experiments at Udemy, incorporating:
+    <ul>
+      <li>Variance reduction methods.</li>
+      <li>Sample sizing methods that adjust for &quot;peeking&quot; as well as methods to choose the &quot;optimal&quot; level of peeking from the perspective of expected experiment duration.</li>
+      <li>Novel methods to reduce variance in quantile treatment effects.</li>
+    </ul>
+  </li>
+  <li>Developed a pre-experiment tool for metric selection based on composing multiple metrics into an ideal blended metric.</li>
+  <li>Developed an estimator that is robust to &quot;sample ratio mismatch&quot; issues, allowing the system to use a correct-not-test approach.</li>
+  <li>Wrote educational material on how to make decisions about experiments, interpret results as well as did short video tutorials.</li>
+</ul>
+
+
+<p><a href="https://compasslexecon.com">Compass Lexecon</a></p>
+<ul>
+  <li>Senior Economist, Chicago, IL</li>
+  <li>February 2020 to August 2022</li>
+  <li>Assisted economic experts testifying on a variety of matters in antitrust (mergers, price-fixing, output restriction) and financial cases (allegations of &quot;spoofing&quot;, alleged unlawful securities) by providing data analysis and economic analysis.</li>
+</ul>
+
+<p><a href="https://afiniti.com">Afiniti</a></p>
+<ul>
+  <li>Research Scientist, Research and Development, Washington, DC.</li>
+  <li>July 1, 2018 to January 2020.</li>
+  <li>Applied and developed models and built the tools to operationalize those models. A hybrid research scientist/engineer role.</li>
+  <li>The company builds models to decide how best to pair callers and call center agents. It bills based on how much it increases, say, the sales rate or reduces the cancellation rate.</li>
+  <li>I developed
+    <ul>
+      <li>an internal R package and strategy to predict the performance of models in production before they are deployed.</li>
+      <li>models that determined which call center agents and callers should be paired to maximize our client’s objectives.</li>
+      <li>a main component of the application we use to decide how to route calls between callers and agents (a production application in C++).</li>
+      <li>metrics to monitor how well different strategies for pairing callers and agents do in production once they are deployed.</li>
+      <li>research on new, next-generation matching algorithms.</li>
+    </ul>
+  </li>
+</ul>
+
+
+<p><a href="https://amazon.com">Amazon</a></p>
+<ul>
+  <li>Economist, Amazon (Prime), Seattle, WA.</li>
+  <li>May 1, 2017 to June 30, 2018</li>
+  <li>Designed, developed, and used a discrete choice demand model to help make pricing and product design decisions that was used in a wide variety of applications at the company. For example, it was used
+    <ul>
+      <li>to inform major Prime pricing decisions;</li>
+      <li>to separately value the various benefits of being a Prime member (free shipping, streaming video and music, etc)</li>
+      <li>to estimate the effect of modifying Prime benefits on Prime membership;</li>
+      <li>to estimate the effect of potential video content investment decisions on Prime membership.</li>
+    </ul>
+  </li>
+  <li>Developed a censored quantile regression approach to model what factors make customers buy a product or sign up for Prime sooner.</li>
+  <li>Worked on many smaller projects, including analysis of which cities had the greatest opportunity size for advertising Prime during NFL games and which lower-income markets had the greatest opportunity size for advertising a lower-priced Prime for lower-income customers.</li>
+  <li>Promoted to Economist II in April 2018.</li>
+</ul>
+
+<p><a href="https://econ.wisc.edu">University of Wisconsin - Madison, Economics Department</a></p>
+
+<ul>
+  <li>Research Assistant to Jesse Gregory
+    <ul>
+      <li>Fall 2014 to August 2016</li>
+      <li>Implemented dynamic discrete choice models to understand housing decision problems for two projects: one on post-Katrina New Orleans and the other on the national housing market.</li>
+      <li>Used Condor at the CHTC at the University of Wisconsin Madison to estimate the large scale dynamic discrete choice models.</li>
+    </ul>
+  </li>
+  <li>Teaching Assistant
+    <ul>
+      <li>Introduction to Macroeconomics (Spring 2013, Spring 2014), Economic Statistics (Fall 2013), Introduction to Microeconomics (Fall 2012)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="heading4">Programming languages and computing</h2>
+
+
+
+<p style="margin-top: 1em">Environments and programs: AWS, Linux, Databricks, Hive, Spark.</p>
+
+
+<p style="margin-top: 1em">Programming languages: C/C++, R, Python, SQL (MySQL, Oracle, Redshift, PostgreSQL, etc), SAS, InfluxDB, Fortran, Matlab/Octave, Ada, Perl, Stata, Julia, Shell Scripting, Lisp, and Scheme.</p>
+
+<p style="margin-top: 1em">For some examples of projects I have done/jobs where I used the above languages regularly:</p>
+
+<ul>
+  <li>C/C++ &mdash; I used C++ for building on the core product at Afiniti and I have written C code for personal projects (see Github).</li>
+  <li>R &mdash; All of my academic papers were mostly written in R (and Fortran). The censored quantile regression project at Amazon mentioned above was done in R as well. I used it frequently for projects at Compass Lexecon and Afiniti, including developing a widely-used internal R package for validating models.</li>
+  <li>Python &mdash; I used Python for various internal projects at Afiniti, a few cases at Compass Lexecon, and for essentially all projects at Udemy, including the experiment analysis system mentioned above.</li>
+  <li>Julia &mdash; I worked in Julia for an internal project at Afiniti.</li>
+  <li>I used various SQL flavors daily at Afiniti, Amazon, and Udemy.</li>
+  <li>Stata &mdash; Some of my RA work at Wisconsin was in Stata, the paper with Lenadro Magnusson developed a Stata package, and I used Stata at Amazon and Compass Lexecon for many projects.</li>
+  <li>RA work with Jesse Gregory used both Matlab and Fortran.</li>
+  <li>I use Perl in personal scripts, and I used it to automate certain tasks at Amazon.</li>
+  <li>I used SAS in cases at Compass Lexecon.</li>
+</ul>
+
+<h2 id="heading5">Writing
+</h2>
+
+
+<p style="margin-top: 1em">The latest versions of all papers are also linked at my website: <a href="https://zflynn.com">https://zflynn.com</a>. I have (mainly) studied econometric issues, how to measure productivity, and how productivity affects market structure and economic growth.</p>
+
+
+<p style="margin-top: 1em">Published Papers</p>
+<ul>
+  <li>Identifying productivity when it is a factor of production (RAND Journal of Economics, Summer 2020)</li>
+  <li>Parametric Inference Using Structural Breaks (with Leandro Magnusson). Stata Journal (2013).</li>
+</ul>
+
+<p style="margin-top: 1em">Short writing/Blogs</p>
+<ul>
+  <li><a href="https://zachlog.com/losing-is-the-value-of-experimentation-5876234629a1">Losing Is The Value Of Experimentation</a></li>
+  <li><a href="https://zachlog.com/peeking-not-considered-harmful-0ed9c02aaf28">Peeking Not Considered Harmful</a></li>
+  <li><a href="https://towardsdatascience.com/stop-the-count-why-putting-a-time-limit-on-metrics-is-critical-for-fast-and-accurate-experiments-468123776f57">Stop the Count! Why Putting A Time Limit on Metrics is Critical for Fast and Accurate Experiments</a></li>
+  <li><a href="https://towardsdatascience.com/in-defense-of-statistical-significance-996e8c62f3e8">In Defense of Statistical Significance</a></li>
+  <li><a href="https://towardsdatascience.com/scale-experiment-decision-making-with-programmatic-decision-rules-a13e2b392462">Scale Experiment Decision-Making with Programmatic Decision Rules</a></li>
+</ul>
+
+
+
+<p style="margin-top: 1em"><a href="https://zflynn.com/research.html">Working Papers</a></p>
+<ul>
+  <li>Measuring markups with production data (with Amit Gandhi and James Traina)</li>
+  <li>Inference based on continuous linear inequalities via semi-infinite programming</li>
+  <li>Ex-ante evaluation of a policy’s effect on productivity: the substitution and scale effects of carbon taxation on power plant productivity</li>
+  <li>Unproductive by choice: substitution and the slowdown in aggregate productivity growth in the United States</li>
+  <li>Partial identification of production functions with flexible inputs (with Amit Gandhi)</li>
+  <li>Identifying the elasticity of experience and its effect on market structure</li>
+</ul>
+
+<h2 id="heading6">Awards and Fellowships</h2>
+
+<ul>
+  <li>Alice S. Gengler Fellowship &mdash; University of Wisconsin Madison &mdash; awarded May 2016</li>
+  <li>Culbertson Prize for Top Field Paper &mdash; University of Wisconsin Madison &mdash; awarded May 2015</li>
+  <li>Graduate Research Fellowship &mdash; University of Wisconsin Madison &mdash; awarded May 2015</li>
+</ul>
