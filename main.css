@@ -24,8 +24,26 @@
 }
 
 .text {
-    border: 0.1em solid black;
+    border:0.2em solid black;
+    background: #eee;
+    border-top-color: white;
+    border-left-color: white;
+    border-bottom-color: #aaa;
+    border-right-color: #aaa;
+    width: 100%;
+    padding-bottom: 1em;
 }
+.textheader {
+    background: navy;
+    color: white;
+    font-weight: bold;
+}
+
+.textheader a {
+    color: white;
+}
+
+
 
 .toolunit {
     padding-left: 1em;
@@ -98,9 +116,12 @@
     color: red;
 }
 
-.researchtable td {
+.text td {
     padding-left: 1em;
     padding-right: 1em;
 }
 
 
+body {
+    background-color: #018281;
+}
