@@ -18,9 +18,6 @@
     color: blue;
     font-weight: bold;
 }
-.headertable a:hover {
-    color: red;
-}
 
 .text {
     border:0.2em solid black;
