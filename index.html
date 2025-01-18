@@ -30,8 +30,13 @@
           }
       }, false);
     </script>
+
+    <script src="fetch_medium.js"></script>
+
   </head>
   <body>
+    <script>getLatest();</script>
+    
 
     <div class="header">
       <iframe id="headerframe" src="header.html" style="width:100%;border:none;" marginwidth="0" marginheight="0"></iframe>
@@ -140,6 +145,16 @@
             </td>
           </tr>
         </table>
+        <table class="text" style="margin-top: 1em">
+          <tr>
+            <th class="textheader">Latest Blog</th>
+          </tr>
+          <tr>
+            <td id="blogwidget">
+            </td>
+          </tr>
+        </table>
+
       </div>
     </div>
   </body>
