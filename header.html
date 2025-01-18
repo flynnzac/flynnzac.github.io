@@ -8,6 +8,29 @@
   </head>
   <body>
     <style>
+      .links a {
+          border-color: black;
+          border-style: outset;
+          border-width: 0.1em;
+      }
+      .links a:hover {
+          border-style:inset;
+      }
+      .imglinks a {
+          padding: 0em;
+      }
+      .imglinks img {
+          border-color: black;
+          border-style: outset;
+          border-width: 0.1em;
+          padding: 0.25em;
+          margin: 0em;
+          width: 2em;
+          height: 2em;
+      }
+      .imglinks img:hover {
+          border-style:inset;
+      }
     </style>
     <script>
       window.addEventListener("load", (event) => {
@@ -28,7 +51,7 @@
     <div class="headertable">
       <table width="100%" class="text" style="padding:0">
         <tr>
-          <td width="34%">
+          <td width="40%" class="links">
             <a href="index.html" target="_top">Home</a>
             <a href="https://zachlog.com" target="_top">Blog</a>
             <a href="projects.html" target="_top">Projects</a>
@@ -36,24 +59,24 @@
             <a href="toolshed.html" target="_top">Toolshed</a>
             <a href="cv.html" target="_top">CV</a>
           </td>
-          <td width="33%">
+          <td width="25%">
             <center><font size="6"><marquee>Zach Flynn</marquee></font></center>
           </td>
-          <td width="33%">
+          <td width="30%" class="imglinks" style="text-align:center">
             <a href="https://zachlog.com" target="_top">
-              <img src="Medium-Icon-Black.png" style="width:2em;height:2em">
+              <img src="Medium-Icon-Black.png">
             </a>
-
             <a href="https://www.linkedin.com/in/zlflynn/" target="_top">
-              <img src="in.png" style="width:2em;height:2em">
+              <img src="in.png">
             </a>
             <a href="https://www.twitter.com/zlflynn/" target="_top">
-              <img src="x-black.png" style="width:2em;height:2em">
+              <img src="x-black.png">
             </a>
             <a href="https://www.github.com/flynnzac/" target="_top">
-              <img src="github-mark.png" style="width:2em;height:2em">
+              <img src="github-mark.png">
             </a>
-
+          </td>
+          <td width="5%">
             zlflynn@gmail.com
           </td>
         </tr>
