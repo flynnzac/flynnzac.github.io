@@ -24,23 +24,11 @@
           type="image/png" 
           href="me_2024_lowres.png">
     
-    <script>
-      window.addEventListener("message", (event) => {
-          if (event.data.type === "resize") {
-              if (event.data.kind === "header") {
-                  const iframe = document.getElementById('headerframe');
-                  iframe.height = event.data.value + "px";
-              }
-              if (event.data.kind === "cv") {
-                  const cvframe = document.getElementById('cvframe');
-                  cvframe.height = event.data.value + "px";
-              }
-          }
-      }, false);
-    </script>
-    
+    <script src="main.js"></script>
+
   </head>
   <body>
+    <script>initReSizerPage();</script>
     <div class="header">
       <iframe id="headerframe" src="header.html" style="width:100%;border:none;" marginwidth="0" marginheight="0"></iframe>
     </div>

@@ -18,21 +18,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300,700&display=swap" rel="stylesheet">
-    <script>
-      window.addEventListener("message", (event) => {
-          if (event.data.type === "resize") {
-              const iframe = document.getElementById('headerframe');
-              iframe.height = event.data.value + "px";
-          }
-      }, false);
-    </script>
 
     <link rel="icon" 
           type="image/png" 
           href="me_2024_lowres.png">
+    <script src="main.js"></script>
   </head>
 
   <body>
+    <script>initReSizerPage();</script>
     <div class="header">
       <iframe id="headerframe" src="header.html" style="width:100%;border:none;" marginwidth="0" marginheight="0"></iframe>
     </div>
@@ -128,7 +122,6 @@
           </td>
         </tr>
       </table>
-
 
     </div>
   </body>
