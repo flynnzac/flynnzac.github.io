@@ -62,7 +62,7 @@ const getLatest = async () => {
     const desc = post.description;
     const blog = document.getElementById('blogwidget');
 
-    blog.innerHTML = `<a href=\"${link}\">${title}</a><br/>${pubDate}<br/>${desc}`;
+    blog.innerHTML = desc;
     var first = 0;
     /* find index of first paragraph */
     for (var i = 0; i < blog.children.length; i++) {
@@ -74,10 +74,10 @@ const getLatest = async () => {
 
     for (var i= blog.children.length; i-->0;) {
         if (i != first) {
-            if (blog.children[i].tagName != "H4") {
+            if ((blog.children[i].tagName != "H4") & (blog.children[i].tagName != "H2")) {
                 blog.removeChild(blog.children[i]);
             }
         }
     }
-    blog.innerHTML = blog.innerHTML + `<p><a href=\"${link}\">(continue)</a></p>`;
+    blog.innerHTML = `<a href=\"${link}\">${title}</a><br/>${pubDate}<br/>` + blog.innerHTML + `<p><a href=\"${link}\">(continue)</a></p>`;
 };
