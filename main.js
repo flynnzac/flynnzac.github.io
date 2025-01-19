@@ -46,7 +46,6 @@ const getMediumData = async () => {
     try {
         const response = await fetch(RSSConverter);
         const data = await response.json();
-        console.log(data);
         return data
     } catch(error){
         console.log(error)
@@ -74,7 +73,7 @@ const getLatest = async () => {
 
     for (var i= blog.children.length; i-->0;) {
         if (i != first) {
-            if ((blog.children[i].tagName != "H4") & (blog.children[i].tagName != "H2")) {
+            if ((blog.children[i].tagName != "H4") | (i > first)) {
                 blog.removeChild(blog.children[i]);
             }
         }
