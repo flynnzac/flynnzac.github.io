@@ -33,6 +33,11 @@
     background: #b24d7a;
     color: white;
     font-weight: bold;
+    border: 0.1em solid black;
+    border-top-color: #aaa;
+    border-left-color: #aaa;
+    border-bottom-color: white;
+    border-right-color: white;
 }
 
 .textheader a {
