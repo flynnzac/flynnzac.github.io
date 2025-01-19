@@ -38,10 +38,9 @@ function initReSizerCV() {
     initReSizerChild("cv");
 }
 
-const username = `zlflynn`
+const username = `zlflynn`;
 const RSSUrl = `https://medium.com/feed/@${username}`;
 const RSSConverter = `https://api.rss2json.com/v1/api.json?rss_url=${RSSUrl}`;
-
 
 const getMediumData = async () => {
     try {
@@ -60,8 +59,25 @@ const getLatest = async () => {
     const title = post.title;
     const pubDate = post.pubDate;
     const link = post.link;
+    const desc = post.description;
     const blog = document.getElementById('blogwidget');
-    console.log(post);
-    console.log(blog);
-    blog.innerHTML = `<a href=\"${link}\">${title}</a><br/>${pubDate}<br/>`;
+
+    blog.innerHTML = `<a href=\"${link}\">${title}</a><br/>${pubDate}<br/>${desc}`;
+    var first = 0;
+    /* find index of first paragraph */
+    for (var i = 0; i < blog.children.length; i++) {
+        if (blog.children[i].tagName === "P") {
+            first = i;
+            break;
+        }
+    }
+
+    for (var i= blog.children.length; i-->0;) {
+        if (i != first) {
+            if (blog.children[i].tagName != "H4") {
+                blog.removeChild(blog.children[i]);
+            }
+        }
+    }
+    blog.innerHTML = blog.innerHTML + `<p><a href=\"${link}\">(continue)</a></p>`;
 };
