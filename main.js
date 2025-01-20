@@ -77,6 +77,10 @@ const getLatest = async () => {
                 blog.removeChild(blog.children[i]);
             }
         }
+        else {
+            blog.children[i].innerHTML = blog.children[i].innerHTML + "...";
+        }
+            
     }
     blog.innerHTML = `<a href=\"${link}\">${title}</a><br/>${pubDate}<br/>` + blog.innerHTML + `<p><a href=\"${link}\">(continue)</a></p>`;
 };
