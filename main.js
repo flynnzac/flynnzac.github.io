@@ -80,3 +80,4 @@ const getLatest = async () => {
     }
     blog.innerHTML = `<a href=\"${link}\">${title}</a><br/>${pubDate}<br/>` + blog.innerHTML + `<p><a href=\"${link}\">(continue)</a></p>`;
 };
+
