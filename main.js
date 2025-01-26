@@ -38,31 +38,32 @@ function initReSizerCV() {
     initReSizerChild("cv");
 }
 
-const username = `zlflynn`;
-const RSSUrl = `https://medium.com/feed/@${username}`;
-const RSSConverter = `https://api.rss2json.com/v1/api.json?rss_url=${RSSUrl}`;
+/* Displays the first post */
 
-const getMediumData = async () => {
-    try {
-        const response = await fetch(RSSConverter);
-        const data = await response.json();
-        return data
-    } catch(error){
-        console.log(error)
-    }
+/* Put your username here: */
+const username = `zlflynn`;
+const Url = `https://medium.com/feed/@${username}`;
+const Converter = `https://api.rss2json.com/v1/api.json?rss_url=${Url}`;
+const BlogWidgetId = "blogwidget" /* the id of the div you want to fill */
+
+const getMediumFeed = async () => {
+  const response = await fetch(Converter);
+  const data = await response.json();
+  return data;
 };
 
 const getLatest = async () => {
-    const posts = await getMediumData();
-    const post = posts.items[0]; // latest text (0 to 9)
+    const posts = await getMediumFeed();
+    const post = posts.items[0]; /* Latest post */
     const title = post.title;
     const pubDate = post.pubDate;
     const link = post.link;
     const desc = post.description;
-    const blog = document.getElementById('blogwidget');
+    const blog = document.getElementById(BlogWidgetId);
 
     blog.innerHTML = desc;
     var first = 0;
+
     /* find index of first paragraph */
     for (var i = 0; i < blog.children.length; i++) {
         if (blog.children[i].tagName === "P") {
@@ -82,6 +83,7 @@ const getLatest = async () => {
         }
             
     }
-    blog.innerHTML = `<a href=\"${link}\">${title}</a><br/>${pubDate}<br/>` + blog.innerHTML + `<p><a href=\"${link}\">(continue)</a></p>`;
+    blog.innerHTML = `<a href=\"${link}\">${title}</a><br/>${pubDate}<br/>` + 
+      blog.innerHTML + 
+      `<p><a href=\"${link}\">(continue)</a></p>`;
 };
-
