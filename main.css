@@ -1,5 +1,5 @@
 .body {
-    width: 80%;
+    width: 80em;
     margin-left: 10%;
     margin-top: 1em;
     font-family: 'Noto Serif', serif;
@@ -8,7 +8,7 @@
 
 .header {
     font-family: 'Noto Serif', serif;
-    width: 80%;
+    width: 80em;
     margin-left: 10%;
     border: 0px;
 }
