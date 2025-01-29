@@ -67,15 +67,8 @@
 
 
 body {
-    /* background-color: #718ba5; */
-    background: linear-gradient(
-        to bottom,
-        #aeb2c3,
-        #aeb2c3 50%,
-        #718ba5 50%,
-        #718ba5
-    );
-    background-size: 100% 0.1em;
+    background-color: #718ba5;
+
 }
 
 
