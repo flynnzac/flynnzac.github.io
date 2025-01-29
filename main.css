@@ -67,7 +67,14 @@
 
 
 body {
-    background-color: #718ba5;
+    background: linear-gradient(
+               135deg,
+               #718ba5,
+               #718ba5 50%,
+               #657d94 50%,
+               #657d94
+    );
+    background-size: 0.5em 0.5em;
 
 }
 
