@@ -20,6 +20,17 @@
     font-weight: bold;
 }
 
+.recessimage {
+    border:0.2em solid black;
+    border-top-color: #9ca0af;
+    border-left-color: #9ca0af;
+    border-bottom-color: white;
+    border-right-color: white;
+    width: 60em;
+    margin-top: 1em;
+}
+    
+
 .text {
     border:0.2em solid black;
     background: #aeb2c3;
