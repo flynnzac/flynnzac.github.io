@@ -22,8 +22,8 @@
 
 .recessimage {
     border:0.2em solid black;
-    border-top-color: #9ca0af;
-    border-left-color: #9ca0af;
+    border-top-color: #bdc0ce;
+    border-left-color: #bdc0ce;
     border-bottom-color: white;
     border-right-color: white;
     width: 60em;
@@ -33,21 +33,21 @@
 
 .text {
     border:0.2em solid black;
-    background: #aeb2c3;
+    background: #dadce4;
     border-top-color: white;
     border-left-color: white;
-    border-bottom-color: #9ca0af;
-    border-right-color: #9ca0af;
+    border-bottom-color: #bdc0ce;
+    border-right-color: #bdc0ce;
     width: 100%;
     padding-bottom: 1em;
 }
 .textheader {
-    background: #b24d7a;
+    background: #018001;
     color: white;
     font-weight: bold;
     border: 0.1em solid black;
-    border-top-color: #9ca0af;
-    border-left-color: #9ca0af;
+    border-top-color: #bdc0ce;
+    border-left-color: #bdc0ce;
     border-bottom-color: white;
     border-right-color: white;
 }
@@ -78,14 +78,7 @@
 
 
 body {
-    background: linear-gradient(
-               135deg,
-               #718ba5,
-               #718ba5 50%,
-               #657d94 50%,
-               #657d94
-    );
-    background-size: 0.5em 0.5em;
+    background: #dee0e7;
 
 }
 
