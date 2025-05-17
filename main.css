@@ -33,11 +33,11 @@
 
 .text {
     border:0.2em solid black;
-    background: #ddd;
+    background: #fffbfb;
     border-top-color: white;
     border-left-color: white;
-    border-bottom-color: #c6c6c6;
-    border-right-color: #c6c6c6;
+    border-bottom-color: #b6c6c6;
+    border-right-color: #b6c6c6;
     width: 100%;
     padding-bottom: 1em;
 }
@@ -45,11 +45,11 @@
     background: #018001;
     color: white;
     font-weight: bold;
-    border: 0.1em solid black;
-    border-top-color: #c6c6c6;
-    border-left-color: #c6c6c6;
-    border-bottom-color: white;
-    border-right-color: white;
+    /* border: 0.1em solid black; */
+    /* border-top-color: #b6c6c6; */
+    /* border-left-color: #b6c6c6; */
+    /* border-bottom-color: white; */
+    /* border-right-color: white; */
 }
 
 .textheader a {
@@ -78,7 +78,7 @@
 
 
 body {
-    background: #ccc;
+    background: #bbcccc;
 
 }
 
