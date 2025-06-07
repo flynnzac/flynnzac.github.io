@@ -31,20 +31,21 @@
     border: 0.1em solid black;
 }
 .links {
-    border-top-color: #b6c6c6;
-    border-left-color:#b6c6c6;
-    border-right-color: black;
-    border-bottom-color: black;
-    border-style: solid;
-    border-width: 0.1em;
+    /* border-top-color: #b6c6c6; */
+    /* border-left-color:#b6c6c6; */
+    /* border-right-color: black; */
+    /* border-bottom-color: black; */
+    /* border-style: solid; */
+    /* border-width: 0.1em; */
 }
-.links:hover {
-    border-top-color: black;
-    border-left-color:black;
-    border-right-color: #b6c6c6;
-    border-bottom-color: #b6c6c6;
-    border-style: solid;
-}
+/* .links:hover { */
+/*     border-top-color: black; */
+/*     border-left-color:black; */
+/*     border-right-color: #b6c6c6; */
+/*     border-bottom-color: #b6c6c6; */
+/*     border-style: solid; */
+/*     border-width: 0.1em; */
+/* } */
 .imglinks a {
     padding: 0em;
 }
@@ -70,10 +71,10 @@
 }
 
 .headertable a {
-    padding: 0.5em;
-    text-decoration: none;
-    color: blue;
-    font-weight: bold;
+    padding-right: 0.25em;
+    /* text-decoration: none; */
+    /* color: blue; */
+    /* font-weight: bold; */
 }
 
 .recessimage {
