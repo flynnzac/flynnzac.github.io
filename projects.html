@@ -14,10 +14,10 @@
     <meta name="author" content="Zach Flynn">
 
     <title>Zach Flynn: Projects</title>
-    <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
 
     <script src="htmx.min.js.js"></script>
     <link rel="icon" 
@@ -27,196 +27,143 @@
     <script src="main.js"></script>    
   </head>
   <body>
-    <script>initReSizerPage();</script>
-    <div class="header">
-      <iframe id="headerframe" src="header.html" style="width:100%;border:none;" marginwidth="0" marginheight="0"></iframe>
-    </div>
 
     <div class="body">
-      <table class="text" style="margin-bottom:1em">
-        <tr>
-          <th class="textheader">Description</th>
-        </tr>
-        <tr>
-          <td>
-            Examples of (public, not-directly-work) projects I've worked on. See my <a href="cv.html">CV</a> for examples of projects I've worked on for employers, and my <a href="https://zachlog.com">blog</a> for other short writing.
-          </td>
-        </tr>
-      </table>
+      <div width="100%" style="padding:0;background-color:#fffbfb;margin-bottom:1em;" class="headertable">
 
-      
-      <div style="width:40em;float:left">
-        <table class="text">
-          <tr>
-            <th class="textheader">Short Writing</th>
-          </tr>
+        <h1>Zach Flynn</h1>
+        
+        <a href="index.html" target="_top" class="links">Home</a>
 
-          <tr >
-            <td style="padding-bottom: 1em">
-              <b class="projlink"
-                 hx-trigger="click"
-                 hx-get="slides/zachlog.html"
-                 hx-target="#hot-take-zone">zachlog.</b>
-              <noscript><a href="slides/zachlog.html">[link]</a></noscript>
-            </td>
-          </tr>
-        </table>
-        <p></p>
+        <a href="projects.html" target="_top" class="links">Projects</a>
+        <a href="research.html" target="_top" class="links">Papers</a>
+        <a href="toolshed.html" target="_top" class="links">Toolshed</a>
+        |
+        <a href="https://zachlog.com" target="_blank" class="links">Blog</a>
+        <a href="https://www.linkedin.com/in/zlflynn" target="_blank" class="links">LinkedIn</a>
+        <a href="https://www.x.com/zlflynn" target="_blank" class="links">X/Twitter</a>
+        <a href="https://www.github.com/flynnzac/" target="_blank" class="links">Github</a>
 
-        <table class="text">
-          <tr>
-            <th class="textheader">Papers</th>
-          </tr>
-          <tr>
-            <td style="padding-bottom: 1em">
-
-              <b class="projlink"
-                 hx-trigger="click"
-                 hx-get="slides/pit.html"
-                 hx-target="#hot-take-zone">Measuring productivity (Identifying productivity when it is a factor of production).</b>
-              <noscript><a href="slides/pit.html">[link]</a></noscript>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding-bottom: 1em">
-              <b class="projlink"
-                 hx-trigger="click"
-                 hx-get="slides/sip.html"
-                 hx-target="#hot-take-zone">Inference based on continuous linear inequalities via semi-infinite programming.</b>
-              <noscript><a href="slides/sip.html">[link]</a></noscript>
-            </td>
-          </tr>
-
-          
-          <tr>
-            <td style="padding-bottom: 1em">
-              <b class="projlink"
-                 hx-trigger="click"
-                 hx-get="slides/markups.html"
-                 hx-target="#hot-take-zone">Measuring markups with production data (with Amit Gandhi and James Traina).</b>
-              <noscript><a href="slides/markups.html">[link]</a></noscript>
-            </td>
-          </tr>
-        </table>
-        <p></p>
-
-        <table class="text">
-          <tr>
-            <th class="textheader">Websites</th>
-          </tr>
-          <tr>
-            <td style="padding-bottom: 1em">
-              <b class="projlink"
-                 hx-trigger="click"
-                 hx-get="slides/samplesizer.html"
-                 hx-target="#hot-take-zone">samplesizer.com: The Best Sample Sizer</b>
-              <noscript><a href="slides/samplesizer.html">[link]</a></noscript>
-            </td>
-          </tr>          
-          
-          <tr>
-            <td style="padding-bottom: 1em">
-              <b class="projlink"
-                 hx-trigger="click"
-                 hx-get="slides/stpwtch_com.html"
-                 hx-target="#hot-take-zone">stpwtch.com: for knowing where the time went</b>
-              <noscript><a href="slides/stpwtch_com.html">[link]</a></noscript>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding-bottom: 1em">
-              <b class="projlink"
-                 hx-trigger="click"
-                 hx-get="slides/memo_er.html"
-                 hx-target="#hot-take-zone">Memo_er (memoer.io): better self-service data analysis.</b>
-              <noscript><a href="slides/memo_er.html">[link]</a></noscript>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding-bottom: 1em">
-              <b class="projlink"
-                 hx-trigger="click"
-                 hx-get="slides/fnshit_com.html"
-                 hx-target="#hot-take-zone">fnsh_it (fnshit.com): for getting long jobs done</b>
-              <noscript><a href="slides/fnshit_com.html">[link]</a></noscript>
-            </td>
-          </tr>
-        </table>
-        <p></p>
-
-        <table class="text">
-          <tr>
-            <th class="textheader">Programs and Libraries</th>
-          </tr>
-          <tr >
-            <td style="padding-bottom: 1em">
-              <b class="projlink"
-                 hx-trigger="click"
-                 hx-get="slides/articleml.html"
-                 hx-target="#hot-take-zone">ArticleML: A markup language for articles with math built for the web.</b>
-              <noscript><a href="slides/articleml.html">[link]</a></noscript>
-            </td>
-          </tr>
-          
-          <tr >
-            <td style="padding-bottom: 1em">
-              <b class="projlink"
-                 hx-trigger="click"
-                 hx-get="slides/slobil.html"
-                 hx-target="#hot-take-zone">SLOBIL: a programming language for command-based interactive programs.</b>
-              <noscript><a href="slides/slobil.html">[link]</a></noscript>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding-bottom: 1em">
-              <b class="projlink"
-                 hx-trigger="click"
-                 hx-get="slides/leas.html"
-                 hx-target="#hot-take-zone">Leas: the Little Extensible Accounting System.</b>
-              <noscript><a href="slides/leas.html">[link]</a></noscript>
-            </td>
-          </tr>
-
-          
-          <tr>
-            <td style="padding-bottom: 1em">            
-
-              <b class="projlink"
-                 hx-trigger="click"
-                 hx-get="slides/pushmac.html"
-                 hx-target="#hot-take-zone">pushmac: a stack-based macro language.</b>
-              <noscript><a href="slides/pushmac.html">[link]</a></noscript>
-            </td>
-          </tr>
-
-          
-          <tr>
-            <td style="padding-bottom: 1em">            
-
-              <b class="projlink"
-                 hx-trigger="click"
-                 hx-get="slides/genvar.html"
-                 hx-target="#hot-take-zone">Enable Stata-like data manipulation in R.</b>
-              <noscript><a href="slides/genvar.html">[link]</a></noscript>
-            </td>
-          </tr>
-        </table>
       </div>
 
-      <div style="width:48%;float:right">
-        <table class="text">
-          <tr> 
-            <th class="textheader">About</th>
-          </tr>
-          <tr>
-            <td id="hot-take-zone">
-              <p>[Click links to learn about projects.]</p>
-            </td>
-          </tr>
-        </table>
-      </div>
+      <hr/>
+
+      <p>Examples of (public, not-directly-work) projects I've worked on. See my <a href="cv.html">CV</a> for examples of projects I've worked on for employers, and my <a href="https://zachlog.com">blog</a> for other short writing.</p>
+
+      <h3>Short Writing</h3>
+      <ol>
+        <li>
+          <b class="projlink"
+             hx-trigger="click"
+             hx-get="slides/zachlog.html"
+             hx-target="#hot-take-zone">zachlog.</b>
+          <noscript><a href="slides/zachlog.html">[link]</a></noscript>
+        </li>
+      </ol>
+
+      <h3>Papers</h3>
+      <ol>
+        <li><b class="projlink"
+               hx-trigger="click"
+               hx-get="slides/pit.html"
+               hx-target="#hot-take-zone">Measuring productivity (Identifying productivity when it is a factor of production).</b>
+          <noscript><a href="slides/pit.html">[link]</a></noscript></li>
+
+        <li><b class="projlink"
+               hx-trigger="click"
+               hx-get="slides/sip.html"
+               hx-target="#hot-take-zone">Inference based on continuous linear inequalities via semi-infinite programming.</b>
+          <noscript><a href="slides/sip.html">[link]</a></noscript></li>
+
+        <li><b class="projlink"
+               hx-trigger="click"
+               hx-get="slides/markups.html"
+               hx-target="#hot-take-zone">Measuring markups with production data (with Amit Gandhi and James Traina).</b>
+          <noscript><a href="slides/markups.html">[link]</a></noscript></li>
+      </ol>
+
+      <h3>Websites</h3>
+      <ol>
+        <li>
+          <b class="projlink"
+             hx-trigger="click"
+             hx-get="slides/samplesizer.html"
+             hx-target="#hot-take-zone">samplesizer.com: The Best Sample Sizer</b>
+          <noscript><a href="slides/samplesizer.html">[link]</a></noscript>
+        </li>
+        <li>
+          <b class="projlink"
+             hx-trigger="click"
+             hx-get="slides/stpwtch_com.html"
+             hx-target="#hot-take-zone">stpwtch.com: for knowing where the time went</b>
+          <noscript><a href="slides/stpwtch_com.html">[link]</a></noscript>
+        </li>
+        <li>
+          <b class="projlink"
+             hx-trigger="click"
+             hx-get="slides/memo_er.html"
+             hx-target="#hot-take-zone">Memo_er (memoer.io): better self-service data analysis.</b>
+          <noscript><a href="slides/memo_er.html">[link]</a></noscript>
+        </li>
+        <li>
+          <b class="projlink"
+             hx-trigger="click"
+             hx-get="slides/fnshit_com.html"
+             hx-target="#hot-take-zone">fnsh_it (fnshit.com): for getting long jobs done</b>
+          <noscript><a href="slides/fnshit_com.html">[link]</a></noscript>
+        </li>
+
+      </ol>
+
+
+      <h3>Programs and Libraries</h3>
+
+      <ol>
+        <li><b class="projlink"
+               hx-trigger="click"
+               hx-get="slides/articleml.html"
+               hx-target="#hot-take-zone">ArticleML: A markup language for articles with math built for the web.</b>
+          <noscript><a href="slides/articleml.html">[link]</a></noscript>
+        </li>
+        <li>
+          <b class="projlink"
+             hx-trigger="click"
+             hx-get="slides/slobil.html"
+             hx-target="#hot-take-zone">SLOBIL: a programming language for command-based interactive programs.</b>
+          <noscript><a href="slides/slobil.html">[link]</a></noscript>
+        </li>
+
+        <li>
+          <b class="projlink"
+             hx-trigger="click"
+             hx-get="slides/leas.html"
+             hx-target="#hot-take-zone">Leas: the Little Extensible Accounting System.</b>
+          <noscript><a href="slides/leas.html">[link]</a></noscript>
+        </li>
+
+
+        <li>
+          <b class="projlink"
+             hx-trigger="click"
+             hx-get="slides/pushmac.html"
+             hx-target="#hot-take-zone">pushmac: a stack-based macro language.</b>
+          <noscript><a href="slides/pushmac.html">[link]</a></noscript>
+        </li>
+
+        <li>
+          <td style="padding-bottom: 1em">            
+
+            <b class="projlink"
+               hx-trigger="click"
+               hx-get="slides/genvar.html"
+               hx-target="#hot-take-zone">Enable Stata-like data manipulation in R.</b>
+            <noscript><a href="slides/genvar.html">[link]</a></noscript>
+        </li>
+      </ol>
+    </div>
+
+    <div class="body" id="hot-take-zone">
+      <p>[Click links to learn about projects.]</p>
     </div>
   </body>
 </html>

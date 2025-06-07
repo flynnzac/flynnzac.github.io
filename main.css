@@ -1,16 +1,72 @@
 .body {
-    width: 80em;
-    margin-left: 10%;
+    width: 60%;
+    margin-left: 20%;
     margin-top: 1em;
-    font-family: 'Noto Serif', serif;
+    font-family: 'Domine', serif;
+    background: #fffbfb;
+    border:0.1em solid black;
+    /* border-top-color: white; */
+    /* border-left-color: white; */
+    /* border-bottom-color: #b6c6c6; */
+    /* border-right-color: #b6c6c6; */
+    padding: 2em;
+    box-shadow: 0.25em 0.25em 0em #597272;
 
 }
 
+#data {
+    border-bottom: 0.1em solid black;
+}
+
+#data th {
+    text-align:left;
+    border-bottom:0.1em solid black;
+    border-top:0.1em solid black
+}
+
 .header {
-    font-family: 'Noto Serif', serif;
-    width: 80em;
-    margin-left: 10%;
-    border: 0px;
+    font-family: 'Domine', serif;
+    width: 60%;
+    margin-left: 20%;
+    border: 0.1em solid black;
+}
+.links {
+    border-top-color: #b6c6c6;
+    border-left-color:#b6c6c6;
+    border-right-color: black;
+    border-bottom-color: black;
+    border-style: solid;
+    border-width: 0.1em;
+}
+.links:hover {
+    border-top-color: black;
+    border-left-color:black;
+    border-right-color: #b6c6c6;
+    border-bottom-color: #b6c6c6;
+    border-style: solid;
+}
+.imglinks a {
+    padding: 0em;
+}
+.imglinks img {
+    border-top-color: #b6c6c6;
+    border-left-color:#b6c6c6;
+    border-right-color: black;
+    border-bottom-color: black;
+    border-style: solid;
+    border-width: 0.1em;
+    padding: 0.25em;
+    margin: 0em;
+    width: 2em;
+    height: 2em;
+}
+.imglinks img:hover {
+    border-top-color: black;
+    border-left-color:black;
+    border-right-color: #b6c6c6;
+    border-bottom-color: #b6c6c6;
+    border-style: solid;
+
 }
 
 .headertable a {
@@ -29,7 +85,7 @@
     width: 60em;
     margin-top: 1em;
 }
-    
+
 
 .text {
     border:0.2em solid black;
@@ -42,8 +98,8 @@
     padding-bottom: 1em;
 }
 .textheader {
-    background: #018001;
-    color: white;
+    background: #bbcccc;
+    color: black;
     font-weight: bold;
     /* border: 0.1em solid black; */
     /* border-top-color: #b6c6c6; */
