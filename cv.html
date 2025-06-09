@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -28,33 +29,30 @@
 
   </head>
   <body>
-    <script>initReSizerPage();</script>
-    <div class="header">
-      <iframe id="headerframe" src="header.html" style="width:100%;border:none;" marginwidth="0" marginheight="0"></iframe>
-    </div>
 
 
     <div class="body">
+      <div width="100%" style="padding:0;background-color:#fffbfb;margin-bottom:1em;" class="headertable">
 
-      <table class="text" style="margin-bottom:1em">
-        <tr><th class="textheader">Description</th></tr>
-        <tr>
-          <td>
-            My CV. Available in PDF, as well: <a href="cv.pdf">[pdf]</a>.
-          </td>
-        </tr>
-      </table>
+        <h1>Zach Flynn</h1>
+        
+        <a href="index.html" target="_top" class="links">Home</a>
+        <a href="projects.html" target="_top" class="links">Projects</a>
+        <a href="research.html" target="_top" class="links">Papers</a>
+        <a href="toolshed.html" target="_top" class="links">Toolshed</a>
+        <span style="padding-left:0.5em;padding-right:0.5em">&</span>
+        <a href="https://zachlog.com" target="_blank" class="links">Blog</a>
+        <a href="https://www.linkedin.com/in/zlflynn" target="_blank" class="links">LinkedIn</a>
+        <a href="https://www.x.com/zlflynn" target="_blank" class="links">X/Twitter</a>
+        <a href="https://www.github.com/flynnzac/" target="_blank" class="links">Github</a>
+      </div>
+
+      <hr/>
+
+      <p>My CV. Available in PDF, as well: <a href="cv.pdf">[pdf]</a>.</p>
+
+      <div id="cv" hx-trigger="load" hx-get="slides/cv.html" hx-target="#cv"></div>
       
-      <table class="text" style="margin-bottom:1em">
-        <tr>
-          <th class="textheader">CV</th>
-        </tr>
-        <tr>
-          <td>
-            <iframe id="cvframe" src="slides/cv.html" style="width:100%;border:none" marginwidth="0" marginheight="0"></iframe>
-          </td>
-        </tr>
-      </table>
     </div>
   </body>
 </html>
