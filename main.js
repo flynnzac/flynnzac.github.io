@@ -53,7 +53,7 @@ const getMediumFeed = async () => {
 
 const getLatest = async () => {
   const posts = await getMediumFeed();
-  const post = posts.items[0]; /* Latest post */
+  const post = posts.items[1]; /* Latest post */
   const title = post.title;
   const pubDate = post.pubDate;
   const link = post.link;
