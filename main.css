@@ -6,23 +6,19 @@
     background: #f4f3ee;
     border:0.1em solid #050517;
     font-weight: 400;
-    /* border-top-color: white; */
-    /* border-left-color: white; */
-    /* border-bottom-color: #b6c6c6; */
-    /* border-right-color: #b6c6c6; */
     padding: 2em;
     box-shadow: 0.25em 0.25em 0em #050517;
 
 }
 
 #data {
-    border-bottom: 0.1em solid black;
+    border-collapse: collapse;
 }
 
 #data th {
     text-align:left;
-    border-bottom:0.1em solid black;
-    border-top:0.1em solid black
+    border-bottom:0.1em solid #050517;
+    border-top:0.1em solid #050517
 }
 
 h1, h2, h3 {
@@ -45,7 +41,7 @@ a:hover {
 }
 
 .recessimage {
-    width: 60em;
+    width: 70%;
     margin-top: 1em;
 }
 
@@ -69,11 +65,11 @@ a:hover {
     padding-right: 1em;
 }
 
-
 body {
     background: #6A8EAE;
     color: #050517;
 
 }
+
 
 
