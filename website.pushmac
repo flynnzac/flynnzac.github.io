@@ -1,11 +1,4 @@
-
-
-
-
-
-
-
-<!doctype html>
+#header=`<!doctype html>
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -17,7 +10,7 @@
 
       gtag("config", "UA-59441513-2");
     </script>
-    <title>Zach Flynn: CV</title>
+    <title>#title~</title>
     <meta name="description" content="Zach Flynn is an economist and data scientist and this website has links to his projects and research.">
     <meta name="keywords" content="economics,Zach Flynn,productivity,industrial organization,statistics,data science">
     <meta name="author" content="Zach Flynn">
@@ -33,11 +26,15 @@
     <script src="main.js"></script>
   </head>
   <body>
+'@
 
 
-<div class="body">
+#footer=`
+</body>
+</html>
+'@
 
-    <div width="100%" class="header">
+#navbar=`  <div width="100%" class="header">
     <h1>Zach Flynn</h1>
     
     <a href="index.html" target="_top" class="links">Home</a>
@@ -56,8 +53,4 @@
   </div>
   
   <hr/>
-
-
-  <p>My CV. Available in PDF, as well: <a href="cv.pdf">[pdf]</a>.</p>
-
-  <div id="cv" hx-trigger="load" hx-get="slides/cv.html" hx-target="
+'@

@@ -1,27 +1,20 @@
-web: index.html research.html teaching.html programs.html links.html 102.html 310.html main.css
+web: index.html research.html projects.html toolshed.html cv.html presentations.html
 
-index.html: index.pshm.html mysite.pshm
-	cat index.pshm.html | pushmac > index.html
+index.html: index.pushmac.html website.pushmac
+	cat index.pushmac.html | pushmac > index.html
 
-research.html: research.pshm.html mysite.pshm
-	cat research.pshm.html | pushmac > research.html
+research.html: research.pushmac.html website.pushmac
+	cat research.pushmac.html | pushmac > research.html
 
-teaching.html: teaching.pshm.html mysite.pshm
-	cat teaching.pshm.html | pushmac > teaching.html
+projects.html: projects.pushmac.html website.pushmac
+	cat projects.pushmac.html | pushmac > projects.html
 
-programs.html: programs.pshm.html mysite.pshm
-	cat programs.pshm.html | pushmac > programs.html
+toolshed.html: toolshed.pushmac.html website.pushmac
+	cat toolshed.pushmac.html | pushmac > toolshed.html
 
-links.html: links.pshm.html mysite.pshm
-	cat links.pshm.html | pushmac > links.html
+cv.html: cv.pushmac.html website.pushmac
+	cat cv.pushmac.html | pushmac > cv.html
 
-102.html: 102.pshm.html mysite.pshm
-	cat 102.pshm.html | pushmac > 102.html
-
-310.html: 310.pshm.html mysite.pshm
-	cat 310.pshm.html | pushmac > 310.html
-
-
-
-
+presentations.html: presentations.pushmac.html website.pushmac
+	cat presentations.pushmac.html | pushmac > presentations.html
 
