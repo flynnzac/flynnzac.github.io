@@ -72,5 +72,9 @@ body {
 
 }
 
-
+.side-by-side:after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
