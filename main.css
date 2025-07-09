@@ -1,12 +1,11 @@
 .body {
-    width: 60%;
-    margin-left: 20%;
-    margin-top: 1em;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 1%;
     font-family: 'Noto Sans', sans;
     background: #f4f3ee;
-    border:0.1em solid #050517;
     font-weight: 400;
-    padding: 2em;
+    padding: 2%;
     box-shadow: 0.25em 0.25em 0em #050517;
     border-radius: 2em;
 
@@ -78,3 +77,9 @@ body {
     display: table;
 }
 
+@media only screen and (max-width: 1000px) {
+    .body {
+        width: 96%;
+        margin-left: 0%;
+    }
+}

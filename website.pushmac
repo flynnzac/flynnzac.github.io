@@ -11,6 +11,8 @@
       gtag("config", "UA-59441513-2");
     </script>
     <title>#title~</title>
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="description" content="Zach Flynn is an economist and data scientist and this website has links to his projects and research.">
     <meta name="keywords" content="economics,Zach Flynn,productivity,industrial organization,statistics,data science">
     <meta name="author" content="Zach Flynn">
