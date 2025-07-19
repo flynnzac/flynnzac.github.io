@@ -12,7 +12,7 @@ projects.html: projects.pushmac.html website.pushmac
 toolshed.html: toolshed.pushmac.html website.pushmac
 	cat toolshed.pushmac.html | pushmac > toolshed.html
 
-cv.html: cv.pushmac.html website.pushmac
+cv.html: cv.pushmac.html website.pushmac slides/cv.html
 	cat cv.pushmac.html | pushmac > cv.html
 
 presentations.html: presentations.pushmac.html website.pushmac
