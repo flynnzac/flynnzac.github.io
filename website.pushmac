@@ -37,7 +37,7 @@
 '@
 
 #navbar=`  <div width="100%" class="header">
-   <img src="header.png" style="width:100%" alt="Zach Flynn"/>
+    <h1>Zach Flynn</h1>
     
     <a href="index.html" target="_top" class="links">Home</a>
     <a href="projects.html" target="_top" class="links">Projects</a>
