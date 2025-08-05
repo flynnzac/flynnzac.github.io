@@ -37,7 +37,7 @@
 '@
 
 #navbar=`  <div width="100%" class="header">
-    <img src="me_2024_lowres.png" style="width:20%;border-radius:1em"/>
+    <img src="me_2024_lowres.png" style="width:20%;border-radius:0em;border:0.1em solid `#''`050517"/>
     <h1>Zach Flynn</h1>
     
     <a href="index.html" target="_top" class="links">Home</a>
