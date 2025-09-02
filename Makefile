@@ -1,4 +1,4 @@
-web: index.html research.html projects.html toolshed.html cv.html presentations.html
+web: index.html research.html projects.html toolshed.html cv.html presentations.html consulting.html
 
 index.html: index.pushmac.html website.pushmac
 	cat index.pushmac.html | pushmac > index.html
@@ -11,6 +11,9 @@ projects.html: projects.pushmac.html website.pushmac
 
 toolshed.html: toolshed.pushmac.html website.pushmac
 	cat toolshed.pushmac.html | pushmac > toolshed.html
+
+consulting.html: consulting.pushmac.html website.pushmac
+	cat consulting.pushmac.html | pushmac > consulting.html
 
 cv.html: cv.pushmac.html website.pushmac slides/cv.html
 	cat cv.pushmac.html | pushmac > cv.html
