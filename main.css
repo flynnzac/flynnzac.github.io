@@ -91,3 +91,7 @@ body {
         margin-left: 0%;
     }
 }
+
+li {
+    margin-bottom: 1em;
+}
