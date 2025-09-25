@@ -1,12 +1,12 @@
 .body {
-    width: 50%;
-    margin-left: 25%;
+    width: 80%;
+    margin-left: 10%;
     margin-top: 1%;
     font-family: 'Noto Sans', sans;
     background: white;
     font-weight: 400;
     padding: 2%;
-    border: 0.1em solid #050517;
+    /* border: 0.1em solid #050517; */
     border-radius: 0em;
 
 }
@@ -74,7 +74,7 @@ a:hover {
 }
 
 body {
-    background: #f4f3ee;
+    /* background: #f4f3ee; */
     color: #050517;
 
 }
