@@ -41,8 +41,8 @@ function initReSizerCV() {
 /* Displays the first post */
 
 /* Put your username here: */
-const username = `zlflynn`;
-const Converter = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${username}`;
+const username = `zachflynn`;
+const Converter = `https://api.rss2json.com/v1/api.json?rss_url=https://${username}.substack.com/feed`;
 const BlogWidgetId = "blogwidget" /* the id of the div you want to fill */
 
 const getMediumFeed = async () => {
